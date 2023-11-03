@@ -8,8 +8,7 @@ import matplotlib.pyplot as plt
 # local imports, add the working directoy to your PYTHONPATH
 # (working directory should be main folder with all code)
 sys.path.insert(0, os.getcwd())
-from canalstools import landown_order, landown_labels
-from canals_config import cdata, out
+from canals_config import cdata, out, landown_order, landown_labels
 
 # set some visual settings
 mpl.rcParams['mathtext.fontset'] = 'custom'
@@ -158,13 +157,14 @@ ax.axhline(1.5, linewidth=0.5, linestyle="-", color="gray", zorder=5)
 ax.axhline(3.5, linewidth=0.5, linestyle="-", color="gray", zorder=5)
 
 # save
-outfp = os.path.join(IEC, "output", "canals", "land_ownership_coefplot.png")
 plt.savefig(f"{out}/land_ownership_coefplot.png", bbox_inches="tight", dpi=200)
 plt.close("all")
 
 # --------------------------------- #
 # Figure 2 alone - for presentation #
 # --------------------------------- #
+fig = plt.figure()
+spec = fig.add_gridspec(ncols=1, nrows=2, height_ratios=[4,1])
 fig = plt.figure(figsize=[4, 6])
 axes = [0,0]
 axes[0] = fig.add_subplot(spec[1])

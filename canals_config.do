@@ -1,9 +1,9 @@
 /* CHANGE THESE: user-specific filepaths */
 global ccode ~/ddl/canals
-global cdata $iec/canals/clean
-global cdata_all $iec/canals
-global out $iec/output/canals
-global tmp /scratch
+global cdata ~/iec/canals/clean
+global cdata_all ~/iec/canals
+global out ~/iec/output/canals
+global tmp /scratch/acampion
 
 /* DO NOT CHANGE ANY SETTINGS BELOW */
 /* set the globals for lists of variables used in the analysis */
@@ -19,6 +19,7 @@ global fnsuffix bal
 global sampelev rug_balance_elev
 global sampcomm rug_balance_comm
 
-/* load helper programs */
+/* load tools and programs */
 do $ccode/canals_programs.do
+do $ccode/canals-tools.do
 
