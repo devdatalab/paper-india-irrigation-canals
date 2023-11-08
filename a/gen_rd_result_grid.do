@@ -12,7 +12,7 @@ lab var evi_delta_r_ln_mean "Rabi (winter) agricultural production (log)"
 /* RD Result Grid */
 /******************/
 /* loop over variables to run rd */
-foreach var in ag_share11 irr_share11 irr_share_canal irr_share_tubewell evi_delta_k_ln_mean evi_delta_r_ln_mean popdens_poly11_log ec13_emp_serv_pc ec13_emp_manuf_pc secc_cons_pc_log ed_middle_adult pc11_pca_p_lit_pc ln_annual_rain ln_kharif_rain ln_rabi_rain {
+foreach var in ag_share11 irr_share11 irr_share_canal irr_share_tubewell evi_delta_k_ln_mean evi_delta_r_ln_mean popdens_poly11_log ec13_emp_serv_pc ec13_emp_manuf_pc secc_cons_pc_log ed_middle_adult pc11_pca_p_lit_pc {
   
   /* get label of variable */
   local title: var label `var'
