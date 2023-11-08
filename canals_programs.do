@@ -442,34 +442,34 @@ prog def record_sample_description
   syntax, template(string) OUTfile(string)
   
   /* insert most important details about regression into csv to be included in slides  */
-  insert_into_file using $ddl/canals/a/sample_description.csv, key(controls_elev) value("Ruggedness, Distance to canal") format(%s)
-  insert_into_file using $ddl/canals/a/sample_description.csv, key(controls_comm) value("Ruggedness, Relative elevation to canal") format(%s)
+  insert_into_file using $ccode/a/sample_description.csv, key(controls_elev) value("Ruggedness, Distance to canal") format(%s)
+  insert_into_file using $ccode/a/sample_description.csv, key(controls_comm) value("Ruggedness, Relative elevation to canal") format(%s)
 
   /* fixed effects */
-  insert_into_file using $ddl/canals/a/sample_description.csv, key(FE) value("canal-subdistrict") format(%s)
+  insert_into_file using $ccode/a/sample_description.csv, key(FE) value("canal-subdistrict") format(%s)
 
   /* Elevation: get sample size and save in csv */
   qui count if $sampelev == 1
   local N_elev = `r(N)'
-  insert_into_file using $ddl/canals/a/sample_description.csv, key(N_elev) value(`N_elev') format(%15.0fc)
+  insert_into_file using $ccode/a/sample_description.csv, key(N_elev) value(`N_elev') format(%15.0fc)
 
   /* Command Area: get sample size and save in csv */
   qui count if $sampcomm == 1
   local N_comm = `r(N)'
-  insert_into_file using $ddl/canals/a/sample_description.csv, key(N_comm) value(`N_comm') format(%15.0fc)
+  insert_into_file using $ccode/a/sample_description.csv, key(N_comm) value(`N_comm') format(%15.0fc)
 
   /* Elevation: get percent treatment */
   qui count if $sampelev == 1 & elev_dummy == 1
   local per_t_elev = int((`r(N)' / `N_elev') * 100)
-  insert_into_file using $ddl/canals/a/sample_description.csv, key(per_t_elev) value(`per_t_elev') format(%3.0f)
+  insert_into_file using $ccode/a/sample_description.csv, key(per_t_elev) value(`per_t_elev') format(%3.0f)
 
   /* Command Area: get percent treatment */
   qui count if $sampcomm == 1 & comm_dummy == 1
   local per_t_comm = int((`r(N)' / `N_comm') * 100)
-  insert_into_file using $ddl/canals/a/sample_description.csv, key(per_t_comm) value(`per_t_comm') format(%3.0f)
+  insert_into_file using $ccode/a/sample_description.csv, key(per_t_comm) value(`per_t_comm') format(%3.0f)
 
   /* save the sample description note  */
-  table_from_tpl, t($ddl/canals/assets/fignotes/regress_desc_note_tpl.tex) r($ddl/canals/a/sample_description.csv) o($out/sample_description_$fnsuffix.tex)
+  table_from_tpl, t($ddl/canals/assets/fignotes/regress_desc_note_tpl.tex) r($ccode/a/sample_description.csv) o($out/sample_description_$fnsuffix.tex)
 
 end
 /* *********** END program record_sample_description ***************************************** */

@@ -23,4 +23,4 @@ foreach var in pc51_pca_tot_p pc51_sex_ratio pc51_pop_dens_ln pc51_hh_size pc51_
 }
 
 /* generate table */
-table_from_tpl, t($ddl/canals/a/pc51_balance_tpl.tex) r($f51bal) o($out/pc51_balance.tex)
+table_from_tpl, t($ccode/a/pc51_balance_tpl.tex) r($f51bal) o($out/pc51_balance.tex)

@@ -5,6 +5,8 @@ global out ~/out
 global tmp ~/scratch
 
 /* DO NOT CHANGE ANY SETTINGS BELOW */
+global STATATEX_PATH $ccode/stata-tex
+
 /* set the globals for lists of variables used in the analysis */
 global ag_outcomes irr_share11 ag_share11 any_water_crop count_water_crop mech_farm_equip  evi_delta_r_ln_mean evi_delta_k_ln_mean irr_share_canal irr_share_tubewell irr_share_oth total_land_acre land_hold_land_own1 two_crop_acre
 global ec_outcomes popdens_poly11 popdens_poly11_log ec13_emp_pc ec13_agro_pc ec13_emp_serv_pc ec13_emp_manuf_pc secc_cons_pc_rural secc_cons_pc_log  pc11_vd_tar_road pc11_pca_p_lit_pc pc11_vd_s_sch pc11_vd_m_sch pc11_vd_all_hosp pc11_vd_power_agr ed_primary_adult ed_middle_adult ed_secondary_adult cons_pc_land_own0_log cons_pc_land_own0 cons_pc_land_own1_log cons_pc_land_own1 high_inc1 land_own1 ed_p_full_land_own0 ed_m_full_land_own0 ed_s_full_land_own0 ed_p_full_land_own1 ed_m_full_land_own1 ed_s_full_land_own1

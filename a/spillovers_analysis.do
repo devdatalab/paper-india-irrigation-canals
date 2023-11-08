@@ -54,17 +54,17 @@ foreach var in irr_share11 irr_share_canal irr_share_tubewell irr_share_oth ag_s
 }
 
 /* Main paper tables, by outcome group */
-table_from_tpl, t($ddl/canals/a/spillovers_table_irr_tpl.tex) r($f) o($out/spillovers_table_irr.tex)
-table_from_tpl, t($ddl/canals/a/spillovers_table_ag_tpl.tex) r($f) o($out/spillovers_table_ag.tex)
-table_from_tpl, t($ddl/canals/a/spillovers_table_ec_tpl.tex) r($f) o($out/spillovers_table_ec.tex)
-table_from_tpl, t($ddl/canals/a/spillovers_table_ls_tpl.tex) r($f) o($out/spillovers_table_ls.tex)
+table_from_tpl, t($ccode/a/spillovers_table_irr_tpl.tex) r($f) o($out/spillovers_table_irr.tex)
+table_from_tpl, t($ccode/a/spillovers_table_ag_tpl.tex) r($f) o($out/spillovers_table_ag.tex)
+table_from_tpl, t($ccode/a/spillovers_table_ec_tpl.tex) r($f) o($out/spillovers_table_ec.tex)
+table_from_tpl, t($ccode/a/spillovers_table_ls_tpl.tex) r($f) o($out/spillovers_table_ls.tex)
 
 /* Presentation table */
-table_from_tpl, t($ddl/canals/a/spillovers_table_pres1_tpl.tex) r($f) o($out/spillovers_table_pres1.tex)
-table_from_tpl, t($ddl/canals/a/spillovers_table_pres2_tpl.tex) r($f) o($out/spillovers_table_pres2.tex)
+table_from_tpl, t($ccode/a/spillovers_table_pres1_tpl.tex) r($f) o($out/spillovers_table_pres1.tex)
+table_from_tpl, t($ccode/a/spillovers_table_pres2_tpl.tex) r($f) o($out/spillovers_table_pres2.tex)
 
 /* Appendix tables */
-table_from_tpl, t($ddl/canals/a/spillovers_table_irr_ebal_app_tpl.tex) r($f) o($out/spillovers_table_irr_ebal_app.tex)
-table_from_tpl, t($ddl/canals/a/spillovers_table_ag_ebal_app_tpl.tex) r($f) o($out/spillovers_table_ag_ebal_app.tex)
-table_from_tpl, t($ddl/canals/a/spillovers_table_ec_ebal_app_tpl.tex) r($f) o($out/spillovers_table_ec_ebal_app.tex)
-table_from_tpl, t($ddl/canals/a/spillovers_table_ls_ebal_app_tpl.tex) r($f) o($out/spillovers_table_ls_ebal_app.tex)
+table_from_tpl, t($ccode/a/spillovers_table_irr_ebal_app_tpl.tex) r($f) o($out/spillovers_table_irr_ebal_app.tex)
+table_from_tpl, t($ccode/a/spillovers_table_ag_ebal_app_tpl.tex) r($f) o($out/spillovers_table_ag_ebal_app.tex)
+table_from_tpl, t($ccode/a/spillovers_table_ec_ebal_app_tpl.tex) r($f) o($out/spillovers_table_ec_ebal_app.tex)
+table_from_tpl, t($ccode/a/spillovers_table_ls_ebal_app_tpl.tex) r($f) o($out/spillovers_table_ls_ebal_app.tex)
