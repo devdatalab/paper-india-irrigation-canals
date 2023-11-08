@@ -838,3 +838,18 @@ end
   /* *********** END program winsorize ***************************************** */
 
 
+/**********************************************************************************/
+/* program count_stars : return a string with the right number of stars           */
+/**********************************************************************************/
+cap prog drop count_stars
+prog def count_stars, rclass
+  {
+    syntax, p(real)
+    local star = ""
+    if `p' <= 0.1  local star = "*"
+    if `p' <= 0.05 local star = "**"
+    if `p' <= 0.01 local star = "***"
+    return local stars = "`star'"
+  }
+end
+/************ END program count_stars ******************************************/
