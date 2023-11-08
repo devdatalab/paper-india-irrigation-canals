@@ -1,9 +1,8 @@
 /* CHANGE THESE: user-specific filepaths */
-global ccode ~/ddl/canals
-global cdata ~/iec/canals/clean
-global cdata_all ~/iec/canals
-global out ~/iec/output/canals
-global tmp /scratch/acampion
+global ccode ~/paper-india-irrigation-canals
+global cdata ~/canals-data
+global out ~/out
+global tmp ~/scratch
 
 /* DO NOT CHANGE ANY SETTINGS BELOW */
 /* set the globals for lists of variables used in the analysis */
@@ -22,4 +21,4 @@ global sampcomm rug_balance_comm
 /* load tools and programs */
 do $ccode/canals_programs.do
 do $ccode/canals-tools.do
-
+do $ccode/stata-tex/stata-tex.do
