@@ -64,25 +64,25 @@ foreach var in $ag_outcomes $ec_outcomes urban_marker {
 /* Output Tables */
 /*****************/
 /* relative elevation table */
-table_from_tpl, t($ccode/a/rd_elev_results_tpl.tex) r($out/rd_elev_results_$fnsuffix.csv) o($out/rd_elev_results_$fnsuffix.tex)
+table_from_tpl, t($ccode/a/tpl/rd_elev_results_tpl.tex) r($out/rd_elev_results_$fnsuffix.csv) o($out/rd_elev_results_$fnsuffix.tex)
 
 /* each panel individually */
-table_from_tpl, t($ccode/a/rd_elev_results_irr_tpl.tex) r($out/rd_elev_results_$fnsuffix.csv) o($out/rd_elev_results_irr_$fnsuffix.tex)
-table_from_tpl, t($ccode/a/rd_elev_results_ag_tpl.tex) r($out/rd_elev_results_$fnsuffix.csv) o($out/rd_elev_results_ag_$fnsuffix.tex)
-table_from_tpl, t($ccode/a/rd_elev_results_ec_tpl.tex) r($out/rd_elev_results_$fnsuffix.csv) o($out/rd_elev_results_ec_$fnsuffix.tex)
-table_from_tpl, t($ccode/a/rd_elev_results_ed_tpl.tex) r($out/rd_elev_results_$fnsuffix.csv) o($out/rd_elev_results_ed_$fnsuffix.tex)
+table_from_tpl, t($ccode/a/tpl/rd_elev_results_irr_tpl.tex) r($out/rd_elev_results_$fnsuffix.csv) o($out/rd_elev_results_irr_$fnsuffix.tex)
+table_from_tpl, t($ccode/a/tpl/rd_elev_results_ag_tpl.tex) r($out/rd_elev_results_$fnsuffix.csv) o($out/rd_elev_results_ag_$fnsuffix.tex)
+table_from_tpl, t($ccode/a/tpl/rd_elev_results_ec_tpl.tex) r($out/rd_elev_results_$fnsuffix.csv) o($out/rd_elev_results_ec_$fnsuffix.tex)
+table_from_tpl, t($ccode/a/tpl/rd_elev_results_ed_tpl.tex) r($out/rd_elev_results_$fnsuffix.csv) o($out/rd_elev_results_ed_$fnsuffix.tex)
 
 /* command area table */
-table_from_tpl, t($ccode/a/rd_comm_results_tpl.tex) r($out/rd_comm_results_$fnsuffix.csv) o($out/rd_comm_results_$fnsuffix.tex)
+table_from_tpl, t($ccode/a/tpl/rd_comm_results_tpl.tex) r($out/rd_comm_results_$fnsuffix.csv) o($out/rd_comm_results_$fnsuffix.tex)
 
 /* each panel individually */
-table_from_tpl, t($ccode/a/rd_comm_results_irr_tpl.tex) r($out/rd_comm_results_$fnsuffix.csv) o($out/rd_comm_results_irr_$fnsuffix.tex)
-table_from_tpl, t($ccode/a/rd_comm_results_ag_tpl.tex) r($out/rd_comm_results_$fnsuffix.csv) o($out/rd_comm_results_ag_$fnsuffix.tex)
-table_from_tpl, t($ccode/a/rd_comm_results_ec_tpl.tex) r($out/rd_comm_results_$fnsuffix.csv) o($out/rd_comm_results_ec_$fnsuffix.tex)
-table_from_tpl, t($ccode/a/rd_comm_results_ed_tpl.tex) r($out/rd_comm_results_$fnsuffix.csv) o($out/rd_comm_results_ed_$fnsuffix.tex)
+table_from_tpl, t($ccode/a/tpl/rd_comm_results_irr_tpl.tex) r($out/rd_comm_results_$fnsuffix.csv) o($out/rd_comm_results_irr_$fnsuffix.tex)
+table_from_tpl, t($ccode/a/tpl/rd_comm_results_ag_tpl.tex) r($out/rd_comm_results_$fnsuffix.csv) o($out/rd_comm_results_ag_$fnsuffix.tex)
+table_from_tpl, t($ccode/a/tpl/rd_comm_results_ec_tpl.tex) r($out/rd_comm_results_$fnsuffix.csv) o($out/rd_comm_results_ec_$fnsuffix.tex)
+table_from_tpl, t($ccode/a/tpl/rd_comm_results_ed_tpl.tex) r($out/rd_comm_results_$fnsuffix.csv) o($out/rd_comm_results_ed_$fnsuffix.tex)
 
 /* output the additional outcomes appendix table */
-table_from_tpl, t($ccode/a/rd_additional_outcomes_tpl.tex) r($out/rd_elev_results_$fnsuffix.csv) o($out/rd_additional_outcomes_$fnsuffix.tex)
+table_from_tpl, t($ccode/a/tpl/rd_additional_outcomes_tpl.tex) r($out/rd_elev_results_$fnsuffix.csv) o($out/rd_additional_outcomes_$fnsuffix.tex)
 
 /* output the school types appendix table */
-table_from_tpl, t($ccode/a/rd_sch_outcomes_tpl.tex) r($out/rd_elev_results_$fnsuffix.csv) o($out/rd_sch_outcomes_$fnsuffix.tex)
+table_from_tpl, t($ccode/a/tpl/rd_sch_outcomes_tpl.tex) r($out/rd_elev_results_$fnsuffix.csv) o($out/rd_sch_outcomes_$fnsuffix.tex)

@@ -1,0 +1,61 @@
+{\setlength{\tabcolsep}{1.5em}
+  \resizebox{\textwidth}{!}{
+  \begin{tabular}{lccc}
+    \multicolumn{4}{l}{\hspace{-1em}\textit{Panel A. Land ownership overview}} \\
+    \hline
+    \hline
+    & Land-owning HHs & Avg. size of land holdings & Avg. size of land holdings  \\
+    & (share of all HHs) & (log hectares, all HHs) & (log hectares, land-owning HHs) \\
+    \hline
+    \hspace{0.5cm}Below canal& $$land_own1_elev_coef$$ & $$land_hold_all_log_elev_coef$$  &  $$land_hold_land_own1_log_elev_coef$$ \\
+    &     ($$land_own1_elev_se$$)   &     ($$land_hold_all_log_elev_se$$)   &     ($$land_hold_land_own1_log_elev_se$$) \\
+    & & & \\
+    \hspace{0.5cm}Control group mean& $$land_own1_elev_mean$$   &  $$land_hold_all_log_elev_mean$$   &  $$land_hold_land_own1_log_elev_mean$$  \\
+    \hspace{0.5cm}Observations& $$land_own1_elev_samp$$   &  $$land_hold_all_log_elev_samp$$  &   $$land_hold_land_own1_log_elev_samp$$\\
+    \hspace{0.5cm}R$^{2}$& $$land_own1_elev_r2$$  &  $$land_hold_all_log_elev_r2$$  &  $$land_hold_land_own1_log_elev_r2$$\\ 
+  \hline
+  \end{tabular}
+}}
+
+\bigskip
+
+{\setlength{\tabcolsep}{0.75em}
+\resizebox{\textwidth}{!}{
+  \begin{tabular}{lcc|cccc}
+    \multicolumn{7}{l}{\hspace{-0.25em}\textit{Panel B. Consumption distribution}} \\
+    \hline
+    \hline
+    & \multicolumn{2}{c|}{Consumption pc} & \multicolumn{4}{c}{Consumption pc (log, land-owning HHs)} \\
+    & (log, landless HHs) & (log, land-owning HHs) & $\mathrm{1^{st}}$ quartile  & $\mathrm{2^{nd}}$ quartile  & $\mathrm{3^{rd}}$ quartile  & $\mathrm{4^{th}}$ quartile  \\
+    \hline
+    \hspace{0.5cm}Below canal  & $$cons_pc_land_own0_log_elev_coef$$ & $$cons_pc_land_own1_log_elev_coef$$ & $$cons_pc_lh_qrt251_log_elev_coef$$ & $$cons_pc_lh_qrt501_log_elev_coef$$  &  $$cons_pc_lh_qrt751_log_elev_coef$$ & $$cons_pc_lh_qrt1001_log_elev_coef$$ \\
+    & ($$cons_pc_land_own0_log_elev_se$$) & ($$cons_pc_land_own1_log_elev_se$$) & ($$cons_pc_lh_qrt251_log_elev_se$$) & ($$cons_pc_lh_qrt501_log_elev_se$$) & ($$cons_pc_lh_qrt751_log_elev_se$$) & ($$cons_pc_lh_qrt1001_log_elev_se$$)  \\
+     & & & & & &  \\
+    \hspace{0.5cm}Control group mean& $$cons_pc_land_own0_log_elev_mean$$ & $$cons_pc_land_own1_log_elev_mean$$ & $$cons_pc_lh_qrt251_log_elev_mean$$   &  $$cons_pc_lh_qrt501_log_elev_mean$$   &  $$cons_pc_lh_qrt751_log_elev_mean$$   &  $$cons_pc_lh_qrt1001_log_elev_mean$$  \\
+    \hspace{0.5cm}Observations& $$cons_pc_land_own0_log_elev_samp$$ & $$cons_pc_land_own1_log_elev_samp$$ & $$cons_pc_lh_qrt251_log_elev_samp$$   &  $$cons_pc_lh_qrt501_log_elev_samp$$  &   $$cons_pc_lh_qrt751_log_elev_samp$$   & $$cons_pc_lh_qrt1001_log_elev_samp$$  \\
+    \hspace{0.5cm}R$^{2}$& $$cons_pc_land_own0_log_elev_r2$$ & $$cons_pc_land_own1_log_elev_r2$$ & $$cons_pc_lh_qrt251_log_elev_r2$$  &  $$cons_pc_lh_qrt501_log_elev_r2$$  &  $$cons_pc_lh_qrt751_log_elev_r2$$  &  $$cons_pc_lh_qrt1001_log_elev_r2$$   \\
+    \hline
+  \end{tabular}
+}}
+
+\bigskip
+
+{\setlength{\tabcolsep}{0.75em}
+\resizebox{\textwidth}{!}{
+  \begin{tabular}{lcc|cc|cc}
+    \multicolumn{7}{l}{\textit{Panel C. Education attainment}} \\
+    \hline
+    \hline
+    & \multicolumn{2}{c|}{At least primary, share of} & \multicolumn{2}{c|}{At least middle, share of} & \multicolumn{2}{c}{At least secondary, share of} \\
+     & landless pop. & land-owning pop. & landless pop. & land-owning pop. & landless pop. & land-owning pop.\\
+    \hline
+    \hspace{0.5cm}Below canal& $$ed_p_full_land_own0_elev_coef$$ & $$ed_p_full_land_own1_elev_coef$$  &  $$ed_m_full_land_own0_elev_coef$$ &  $$ed_m_full_land_own1_elev_coef$$ & $$ed_s_full_land_own0_elev_coef$$ & $$ed_s_full_land_own1_elev_coef$$  \\
+    &     ($$ed_p_full_land_own0_elev_se$$)   &     ($$ed_p_full_land_own1_elev_se$$)   &     ($$ed_m_full_land_own0_elev_se$$)   &     ($$ed_m_full_land_own1_elev_se$$)   &     ($$ed_s_full_land_own0_elev_se$$) & ($$ed_s_full_land_own1_elev_se$$)  \\
+    & & & & & & \\
+    \hspace{0.5cm}Control group mean& $$ed_p_full_land_own0_elev_mean$$   &  $$ed_p_full_land_own1_elev_mean$$   &  $$ed_m_full_land_own0_elev_mean$$   &  $$ed_m_full_land_own1_elev_mean$$   & $$ed_s_full_land_own0_elev_mean$$ & $$ed_s_full_land_own1_elev_mean$$  \\
+    \hspace{0.5cm}Observations& $$ed_p_full_land_own0_elev_samp$$   &  $$ed_p_full_land_own1_elev_samp$$  &   $$ed_m_full_land_own0_elev_samp$$   & $$ed_m_full_land_own1_elev_samp$$   &  $$ed_s_full_land_own0_elev_samp$$ & $$ed_s_full_land_own1_elev_samp$$  \\
+    \hspace{0.5cm}R$^{2}$& $$ed_p_full_land_own0_elev_r2$$  &  $$ed_p_full_land_own1_elev_r2$$  &  $$ed_m_full_land_own0_elev_r2$$  &  $$ed_m_full_land_own1_elev_r2$$   &  $$ed_s_full_land_own0_elev_r2$$ & $$ed_s_full_land_own1_elev_r2$$ \\
+    \hline
+    \multicolumn{4}{l}{$^{*}p<0.10, ^{**}p<0.05, ^{***}p<0.01$}
+  \end{tabular}
+}}

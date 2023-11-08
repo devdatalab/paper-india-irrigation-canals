@@ -1,0 +1,61 @@
+{\setlength{\tabcolsep}{0.5em}
+  \begin{tabular}{lcc|cc}
+                                                 & \multicolumn{2}{c|}{Population}  & \multicolumn{2}{c}{Town Existence} \\
+                                                 & \multicolumn{2}{c|}{(log)}       & \multicolumn{2}{c}{(pop. 5,000)}   \\ 
+    \textit{Panel A. Add State * Year Fixed Effects}  &&&& \\
+    \hline \hline
+    \hspace{1cm}    Command area in town catchment area          & $$sfe_ln_pop_fill_20_starbeta$$ &                                     & $$sfe_appeared5000_20_starbeta$$ &                                   \\
+    \hspace{1cm}        \textit{(binary treatment)}                  & ($$sfe_ln_pop_fill_20_se$$)     &                                     & ($$sfe_appeared5000_20_se$$)     &                                   \\
+                                                 &                                  &                                     &                                   &                                   \\
+    \hspace{1cm}        Share of town catchment area in command area &                                  & $$cts_sfe_ln_pop_fill_20_starbeta$$     &                                   & $$cts_sfe_appeared5000_20_starbeta$$  \\
+    \hspace{1cm}        \textit{(continuous treatment)}              &                                  & ($$cts_sfe_ln_pop_fill_20_se$$)         &                                   & ($$cts_sfe_appeared5000_20_se$$)      \\
+    \hline
+    Observations  & $$sfe_ln_pop_fill_20_n$$ & $$cts_sfe_ln_pop_fill_20_n$$    & $$sfe_appeared5000_20_n$$  & $$cts_sfe_appeared5000_20_n$$     \\
+    $R^{2}$       &                           &  $$cts_sfe_ln_pop_fill_20_r2$$  &                             & $$cts_sfe_appeared5000_20_r2$$    \\
+    \hline
+    
+    &&&& \\
+    
+    \textit{Panel B. Drop Years After 1990}  &&&& \\
+    \hline \hline
+    \hspace{1cm}        Command area in town catchment area          & $$cut_ln_pop_fill_20_starbeta$$ &                                     & $$cut_appeared5000_20_starbeta$$ &                                   \\
+    \hspace{1cm}        \textit{(binary treatment)}                  & ($$cut_ln_pop_fill_20_se$$)     &                                     & ($$cut_appeared5000_20_se$$)     &                                   \\
+                                                 &                                  &                                     &                                   &                                   \\
+    \hspace{1cm}        Share of town catchment area in command area &                                  & $$cts_cut_ln_pop_fill_20_starbeta$$     &                                   & $$cts_cut_appeared5000_20_starbeta$$  \\
+    \hspace{1cm}        \textit{(continuous treatment)}              &                                  & ($$cts_cut_ln_pop_fill_20_se$$)         &                                   & ($$cts_cut_appeared5000_20_se$$)      \\
+    \hline
+    Observations  & $$cut_ln_pop_fill_20_n$$ & $$cts_cut_ln_pop_fill_20_n$$    & $$cut_appeared5000_20_n$$  & $$cts_cut_appeared5000_20_n$$     \\
+    $R^{2}$       &                           &  $$cts_cut_ln_pop_fill_20_r2$$  &                             & $$cts_cut_appeared5000_20_r2$$    \\
+    \hline
+    
+    &&&& \\
+    
+    \textit{Panel C. Define Catchment Area as 10 km Radius}  &&&& \\
+    \hline \hline
+    \hspace{1cm}        Command area in town catchment area          & $$main_ln_pop_fill_10_starbeta$$ &                                     & $$main_appeared5000_10_starbeta$$ &                                   \\
+    \hspace{1cm}        \textit{(binary treatment)}                  & ($$main_ln_pop_fill_10_se$$)     &                                     & ($$main_appeared5000_10_se$$)     &                                   \\
+                                                 &                                  &                                     &                                   &                                   \\
+    \hspace{1cm}        Share of town catchment area in command area &                                  & $$cts_ln_pop_fill_10_starbeta$$     &                                   & $$cts_appeared5000_10_starbeta$$  \\
+    \hspace{1cm}        \textit{(continuous treatment)}              &                                  & ($$cts_ln_pop_fill_10_se$$)         &                                   & ($$cts_appeared5000_10_se$$)      \\
+    \hline
+    Observations  & $$main_ln_pop_fill_10_n$$ & $$cts_ln_pop_fill_10_n$$    & $$main_appeared5000_10_n$$  & $$cts_appeared5000_10_n$$     \\
+    $R^{2}$       &                           &  $$cts_ln_pop_fill_10_r2$$  &                             & $$cts_appeared5000_10_r2$$    \\
+    \hline
+    
+    &&&& \\
+    
+    \textit{Panel D. Define Catchment Area as 30 km Radius}  &&&& \\
+    \hline \hline
+    \hspace{1cm}        Command area in town catchment area          & $$main_ln_pop_fill_30_starbeta$$ &                                     & $$main_appeared5000_30_starbeta$$ &                                   \\
+    \hspace{1cm}        \textit{(binary treatment)}                  & ($$main_ln_pop_fill_30_se$$)     &                                     & ($$main_appeared5000_30_se$$)     &                                   \\
+                                                 &                                  &                                     &                                   &                                   \\
+    \hspace{1cm}        Share of town catchment area in command area &                                  & $$cts_ln_pop_fill_30_starbeta$$     &                                   & $$cts_appeared5000_30_starbeta$$  \\
+    \hspace{1cm}        \textit{(continuous treatment)}              &                                  & ($$cts_ln_pop_fill_30_se$$)         &                                   & ($$cts_appeared5000_30_se$$)      \\
+    \hline
+    Observations  & $$main_ln_pop_fill_30_n$$ & $$cts_ln_pop_fill_30_n$$    & $$main_appeared5000_30_n$$  & $$cts_appeared5000_30_n$$     \\
+    $R^{2}$       &                           &  $$cts_ln_pop_fill_30_r2$$  &                             & $$cts_appeared5000_30_r2$$    \\
+    \hline
+    
+    \multicolumn{5}{p{\linewidth}}{$^{*}p<0.10, ^{**}p<0.05, ^{***}p<0.01$}
+  \end{tabular}
+}

@@ -58,4 +58,4 @@ reg pl_enum_diff_urban canal_gain_51_81 comm_per_1951 i.nss43_state_id [pw=wt] i
 save_nss_migration_results, varname(pl_enum_diff_urban) id(1951uu) tabfile($fn_nssmig) sector(2)
 
 /* typeset table */
-table_from_tpl, t($ccode/a/nss_migration_table_tpl.tex) r($fn_nssmig) o($out/nss_migration_table.tex)
+table_from_tpl, t($ccode/a/tpl/nss_migration_table_tpl.tex) r($fn_nssmig) o($out/nss_migration_table.tex)

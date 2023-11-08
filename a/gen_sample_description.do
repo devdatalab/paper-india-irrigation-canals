@@ -52,6 +52,6 @@ replace all_india = 0 if mi(all_india)
 get_descriptive_stats $papervars if all_india == 1, treatvar(all_india) csvfile($out/sample_description.csv) suffix(all_india)
 
 /* create table */
-table_from_tpl, t($ccode/a/sample_description_tpl.tex) r($out/sample_description.csv) o($out/sample_description.tex)
+table_from_tpl, t($ccode/a/tpl/sample_description_tpl.tex) r($out/sample_description.csv) o($out/sample_description.tex)
 
 

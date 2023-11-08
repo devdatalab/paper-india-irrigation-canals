@@ -143,4 +143,4 @@ foreach c in 5 10 15 {
 
 
 /* make the table */
-table_from_tpl, t($ccode/a/sensitivity_table_tpl.tex) r($out/sensitivity_table.csv) o($out/sensitivity_table.tex)
+table_from_tpl, t($ccode/a/tpl/sensitivity_table_tpl.tex) r($out/sensitivity_table.csv) o($out/sensitivity_table.tex)

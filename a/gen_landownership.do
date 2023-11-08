@@ -27,5 +27,5 @@ foreach var in secc_cons_pc_log popdens_poly11_log land_own1 land_hold_land_own1
 
 }
 
-table_from_tpl, t($ddl/canals/a/land_ownership_results_tpl.tex) r($out/rd_land_ownership_$fnsuffix.csv) o($out/rd_land_ownership_results.tex)
+table_from_tpl, t($ccode/a/tpl/land_ownership_results_tpl.tex) r($out/rd_land_ownership_$fnsuffix.csv) o($out/rd_land_ownership_results.tex)
 

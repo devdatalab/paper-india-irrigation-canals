@@ -133,29 +133,29 @@ foreach var in $ag_outcomes $ec_outcomes urban_marker pop_share_06 age70p_share 
 }
 
 /* make all the tables by category - used in the paper */
-table_from_tpl, t($ccode/a/appendix_irr_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/appendix_irr.tex)
-table_from_tpl, t($ccode/a/appendix_ag_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/appendix_ag.tex)
-table_from_tpl, t($ccode/a/appendix_ec_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/appendix_ec.tex)
-table_from_tpl, t($ccode/a/appendix_ed_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/appendix_ed.tex)
+table_from_tpl, t($ccode/a/tpl/appendix_irr_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/appendix_irr.tex)
+table_from_tpl, t($ccode/a/tpl/appendix_ag_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/appendix_ag.tex)
+table_from_tpl, t($ccode/a/tpl/appendix_ec_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/appendix_ec.tex)
+table_from_tpl, t($ccode/a/tpl/appendix_ed_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/appendix_ed.tex)
 
 /* make sinuosity table */
-table_from_tpl, t($ccode/a/sinuosity_table_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/sinuosity_table.tex)
+table_from_tpl, t($ccode/a/tpl/sinuosity_table_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/sinuosity_table.tex)
 
 /* make the main results table but with the unweighted results (additional robustness) - 04/28/23: now included in the main table as a panel, not as an individual table */
-table_from_tpl, t($ccode/a/appendix_nowt_irr_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/appendix_nowt_irr.tex)
-table_from_tpl, t($ccode/a/appendix_nowt_ag_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/appendix_nowt_ag.tex)
-table_from_tpl, t($ccode/a/appendix_nowt_ec_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/appendix_nowt_ec.tex)
-table_from_tpl, t($ccode/a/appendix_nowt_ed_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/appendix_nowt_ed.tex)
+table_from_tpl, t($ccode/a/tpl/appendix_nowt_irr_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/appendix_nowt_irr.tex)
+table_from_tpl, t($ccode/a/tpl/appendix_nowt_ag_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/appendix_nowt_ag.tex)
+table_from_tpl, t($ccode/a/tpl/appendix_nowt_ec_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/appendix_nowt_ec.tex)
+table_from_tpl, t($ccode/a/tpl/appendix_nowt_ed_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/appendix_nowt_ed.tex)
 
 /* make all the tables by sample - used in the presentation */
-table_from_tpl, t($ccode/a/rd_elev_results_bal_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/app_rd_elev_results_bal.tex)
-table_from_tpl, t($ccode/a/rd_elev_results_full_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/app_rd_elev_results_full.tex)
-table_from_tpl, t($ccode/a/rd_elev_results_donut_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/app_rd_elev_results_donut.tex)
-table_from_tpl, t($ccode/a/rd_elev_results_hole_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/app_rd_elev_results_hole.tex)
-table_from_tpl, t($ccode/a/rd_elev_results_control_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/app_rd_elev_results_control.tex)
-table_from_tpl, t($ccode/a/rd_elev_results_median_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/app_rd_elev_results_median.tex)
-table_from_tpl, t($ccode/a/rd_elev_results_p25_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/app_rd_elev_results_p25.tex)
-table_from_tpl, t($ccode/a/rd_comm_results_bal_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/app_rd_comm_results_bal.tex)
-table_from_tpl, t($ccode/a/rd_elev_results_full_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/app_rd_elev_results_full.tex)
-table_from_tpl, t($ccode/a/rd_elev_results_sin_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/app_rd_elev_results_sin.tex)
-table_from_tpl, t($ccode/a/rd_elev_results_seg_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/app_rd_elev_results_seg.tex)
+table_from_tpl, t($ccode/a/tpl/rd_elev_results_bal_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/app_rd_elev_results_bal.tex)
+table_from_tpl, t($ccode/a/tpl/rd_elev_results_full_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/app_rd_elev_results_full.tex)
+table_from_tpl, t($ccode/a/tpl/rd_elev_results_donut_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/app_rd_elev_results_donut.tex)
+table_from_tpl, t($ccode/a/tpl/rd_elev_results_hole_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/app_rd_elev_results_hole.tex)
+table_from_tpl, t($ccode/a/tpl/rd_elev_results_control_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/app_rd_elev_results_control.tex)
+table_from_tpl, t($ccode/a/tpl/rd_elev_results_median_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/app_rd_elev_results_median.tex)
+table_from_tpl, t($ccode/a/tpl/rd_elev_results_p25_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/app_rd_elev_results_p25.tex)
+table_from_tpl, t($ccode/a/tpl/rd_comm_results_bal_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/app_rd_comm_results_bal.tex)
+table_from_tpl, t($ccode/a/tpl/rd_elev_results_full_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/app_rd_elev_results_full.tex)
+table_from_tpl, t($ccode/a/tpl/rd_elev_results_sin_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/app_rd_elev_results_sin.tex)
+table_from_tpl, t($ccode/a/tpl/rd_elev_results_seg_tpl.tex) r($out/rd_coef_results_all_appendix.csv) o($out/app_rd_elev_results_seg.tex)

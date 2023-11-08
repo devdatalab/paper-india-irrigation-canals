@@ -173,17 +173,17 @@ foreach d in 10 20 30 {
 }
 
 /* generate main outcome table from these estimates */
-table_from_tpl, t($ccode/a/town_did_dechaise_tpl.tex) r($estfile) o($out/town_did.tex)
+table_from_tpl, t($ccode/a/tpl/town_did_dechaise_tpl.tex) r($estfile) o($out/town_did.tex)
 
 /* generate appendix table from these estimates */
-table_from_tpl, t($ccode/a/town_did_robust_tpl.tex) r($estfile) o($out/town_did_robust.tex)
+table_from_tpl, t($ccode/a/tpl/town_did_robust_tpl.tex) r($estfile) o($out/town_did_robust.tex)
 shell cp $out/town_did_robust.tex ~/ddl/canals-overleaf/exhibits
 
 /* generate appendix table from these estimates */
-table_from_tpl, t($ccode/a/town_did_appearance.tpl) r($estfile) o($out/town_did_appear.tex)
+table_from_tpl, t($ccode/a/tpl/town_did_appearance_tpl.tex) r($estfile) o($out/town_did_appear.tex)
 shell cp $out/town_did_appear.tex ~/ddl/canals-overleaf/exhibits
 
 /* generate new tables, split by appearance and pop/growth */
-table_from_tpl, t($ccode/a/town_did_pop_growth.tpl) r($estfile) o($out/town_did_growth.tex)
+table_from_tpl, t($ccode/a/tpl/town_did_pop_growth_tpl.tex) r($estfile) o($out/town_did_growth.tex)
 shell cp $out/town_did_growth.tex ~/ddl/canals-overleaf/exhibits
 

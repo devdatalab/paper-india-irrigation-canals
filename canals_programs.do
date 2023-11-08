@@ -469,7 +469,7 @@ prog def record_sample_description
   insert_into_file using $ccode/a/sample_description.csv, key(per_t_comm) value(`per_t_comm') format(%3.0f)
 
   /* save the sample description note  */
-  table_from_tpl, t($ddl/canals/assets/fignotes/regress_desc_note_tpl.tex) r($ccode/a/sample_description.csv) o($out/sample_description_$fnsuffix.tex)
+  table_from_tpl, t($ccode/a/tpl/regress_desc_note_tpl.tex) r($ccode/a/sample_description.csv) o($out/sample_description_$fnsuffix.tex)
 
 end
 /* *********** END program record_sample_description ***************************************** */

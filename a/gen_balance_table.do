@@ -32,5 +32,5 @@ foreach var in $geo_controls {
 }
 
 /* relative elevation - limited tables with only main results */
-table_from_tpl, t($ccode/a/rd_elev_balance_tpl.tex) r($out/balance_rd_$fnsuffix.csv) o($out/rd_elev_balance.tex)
-table_from_tpl, t($ccode/a/rd_comm_balance_tpl.tex) r($out/balance_rd_$fnsuffix.csv) o($out/rd_comm_balance.tex)
+table_from_tpl, t($ccode/a/tpl/rd_elev_balance_tpl.tex) r($out/balance_rd_$fnsuffix.csv) o($out/rd_elev_balance.tex)
+table_from_tpl, t($ccode/a/tpl/rd_comm_balance_tpl.tex) r($out/balance_rd_$fnsuffix.csv) o($out/rd_comm_balance.tex)

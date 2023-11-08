@@ -1,6 +1,6 @@
 /* CHANGE THESE: user-specific filepaths */
 global ccode ~/paper-india-irrigation-canals
-global cdata ~/canals-data
+global cdata ~/data-canals
 global out ~/out
 global tmp ~/scratch
 

@@ -1,0 +1,77 @@
+{\setlength{\tabcolsep}{0.1em}
+  \begin{tabular}{lccccc}
+    & Agricultural land & Kharif (monsoon) & Rabi (winter)  & Water-intensive & Mechanized farm equip. \\
+    & (share of village area) & ag. prod (log) & ag. prod (log) & crops (any) & (share of all HHs)\\
+    \hline
+
+    \multicolumn{6}{l}{\textit{Panel A: All canal-area settlements, minus donut hole}} \\
+    \hline\hline
+    \hspace{0.5cm}Below canal& $$donut_ag_share11_elev_coef$$ & $$donut_evi_delta_k_ln_mean_elev_coef$$ & $$donut_evi_delta_r_ln_mean_elev_coef$$  &  $$donut_any_water_crop_elev_coef$$ & $$donut_mech_farm_equip_elev_coef$$ \\
+    &  ($$donut_ag_share11_elev_se$$) &  ($$donut_evi_delta_k_ln_mean_elev_se$$) & ($$donut_evi_delta_r_ln_mean_elev_se$$)  &     ($$donut_any_water_crop_elev_se$$)   &     ($$donut_mech_farm_equip_elev_se$$)   \\
+    & & & & & \\
+    \hspace{0.5cm}Control group mean&  $$donut_ag_share11_elev_mean$$ & $$donut_evi_delta_k_ln_mean_elev_mean$$  & $$donut_evi_delta_r_ln_mean_elev_mean$$   & $$donut_any_water_crop_elev_mean$$   &  $$donut_mech_farm_equip_elev_mean$$   \\
+    \hspace{0.5cm}Observations& $$donut_ag_share11_elev_samp$$ &  $$donut_evi_delta_k_ln_mean_elev_samp$$   &  $$donut_evi_delta_r_ln_mean_elev_samp$$   &  $$donut_any_water_crop_elev_samp$$   & $$donut_mech_farm_equip_elev_samp$$  \\
+    \hspace{0.5cm}R$^{2}$& $$donut_ag_share11_elev_r2$$ & $$donut_evi_delta_k_ln_mean_elev_r2$$   & $$donut_evi_delta_r_ln_mean_elev_r2$$   &  $$donut_any_water_crop_elev_r2$$  &  $$donut_mech_farm_equip_elev_r2$$   \\
+    \hline
+    
+    \multicolumn{6}{l}{\textit{Panel B:  Canal-area settlements balanced on ruggedness, using 25$\mathrm{^{th}}$ percentile settlement elevation}} \\
+    \hline\hline
+    \hspace{0.5cm}Below canal& $$p25_ag_share11_elev_coef$$ & $$p25_evi_delta_k_ln_mean_elev_coef$$ & $$p25_evi_delta_r_ln_mean_elev_coef$$  &  $$p25_any_water_crop_elev_coef$$ & $$p25_mech_farm_equip_elev_coef$$ \\
+    &  ($$p25_ag_share11_elev_se$$) &  ($$p25_evi_delta_k_ln_mean_elev_se$$) & ($$p25_evi_delta_r_ln_mean_elev_se$$)  &     ($$p25_any_water_crop_elev_se$$)   &     ($$p25_mech_farm_equip_elev_se$$)   \\
+    & & & & & \\
+    \hspace{0.5cm}Control group mean&  $$p25_ag_share11_elev_mean$$ & $$p25_evi_delta_k_ln_mean_elev_mean$$  & $$p25_evi_delta_r_ln_mean_elev_mean$$   & $$p25_any_water_crop_elev_mean$$   &  $$p25_mech_farm_equip_elev_mean$$   \\
+    \hspace{0.5cm}Observations& $$p25_ag_share11_elev_samp$$ &  $$p25_evi_delta_k_ln_mean_elev_samp$$   &  $$p25_evi_delta_r_ln_mean_elev_samp$$   &  $$p25_any_water_crop_elev_samp$$   & $$p25_mech_farm_equip_elev_samp$$  \\
+    \hspace{0.5cm}R$^{2}$& $$p25_ag_share11_elev_r2$$ & $$p25_evi_delta_k_ln_mean_elev_r2$$   & $$p25_evi_delta_r_ln_mean_elev_r2$$   &  $$p25_any_water_crop_elev_r2$$  &  $$p25_mech_farm_equip_elev_r2$$   \\
+    \hline
+
+    \multicolumn{6}{l}{\textit{Panel C: Main analysis sample, excluding villages intersected by a canal}} \\
+    \hline \hline
+    \hspace{0.5cm}Below canal& $$hole_ag_share11_elev_coef$$ & $$hole_evi_delta_k_ln_mean_elev_coef$$ & $$hole_evi_delta_r_ln_mean_elev_coef$$  &  $$hole_any_water_crop_elev_coef$$ & $$hole_mech_farm_equip_elev_coef$$ \\
+    &  ($$hole_ag_share11_elev_se$$) &  ($$hole_evi_delta_k_ln_mean_elev_se$$) & ($$hole_evi_delta_r_ln_mean_elev_se$$)  &     ($$hole_any_water_crop_elev_se$$)   &     ($$hole_mech_farm_equip_elev_se$$)   \\
+    & & & & & \\
+    \hspace{0.5cm}Control group mean&  $$hole_ag_share11_elev_mean$$ & $$hole_evi_delta_k_ln_mean_elev_mean$$  & $$hole_evi_delta_r_ln_mean_elev_mean$$   & $$hole_any_water_crop_elev_mean$$   &  $$hole_mech_farm_equip_elev_mean$$   \\
+    \hspace{0.5cm}Observations& $$hole_ag_share11_elev_samp$$ &  $$hole_evi_delta_k_ln_mean_elev_samp$$   &  $$hole_evi_delta_r_ln_mean_elev_samp$$   &  $$hole_any_water_crop_elev_samp$$   & $$hole_mech_farm_equip_elev_samp$$  \\
+    \hspace{0.5cm}R$^{2}$& $$hole_ag_share11_elev_r2$$ & $$hole_evi_delta_k_ln_mean_elev_r2$$   & $$hole_evi_delta_r_ln_mean_elev_r2$$   &  $$hole_any_water_crop_elev_r2$$  &  $$hole_mech_farm_equip_elev_r2$$   \\
+    \hline
+
+    \multicolumn{6}{l}{\textit{Panel D: Main analysis sample, additional control for distance to canal}} \\
+    \hline \hline
+    \hspace{0.5cm}Below canal& $$control_ag_share11_elev_coef$$ & $$control_evi_delta_k_ln_mean_elev_coef$$ & $$control_evi_delta_r_ln_mean_elev_coef$$  &  $$control_any_water_crop_elev_coef$$ & $$control_mech_farm_equip_elev_coef$$ \\
+    &  ($$control_ag_share11_elev_se$$) &  ($$control_evi_delta_k_ln_mean_elev_se$$) & ($$control_evi_delta_r_ln_mean_elev_se$$)  &     ($$control_any_water_crop_elev_se$$)   &     ($$control_mech_farm_equip_elev_se$$)   \\
+    & & & & & \\
+    \hspace{0.5cm}Control group mean&  $$control_ag_share11_elev_mean$$ & $$control_evi_delta_k_ln_mean_elev_mean$$  & $$control_evi_delta_r_ln_mean_elev_mean$$   & $$control_any_water_crop_elev_mean$$   &  $$control_mech_farm_equip_elev_mean$$   \\
+    \hspace{0.5cm}Observations& $$control_ag_share11_elev_samp$$ &  $$control_evi_delta_k_ln_mean_elev_samp$$   &  $$control_evi_delta_r_ln_mean_elev_samp$$   &  $$control_any_water_crop_elev_samp$$   & $$control_mech_farm_equip_elev_samp$$  \\
+    \hspace{0.5cm}R$^{2}$& $$control_ag_share11_elev_r2$$ & $$control_evi_delta_k_ln_mean_elev_r2$$   & $$control_evi_delta_r_ln_mean_elev_r2$$   &  $$control_any_water_crop_elev_r2$$  &  $$control_mech_farm_equip_elev_r2$$   \\
+    \hline
+
+   \multicolumn{6}{l}{\textit{Panel E: Main analysis sample, only long and straight canals with canal-segment fixed effects}} \\
+    \hline \hline
+    \hspace{0.5cm}Below canal& $$s2l5_ag_share11_seg_coef$$ & $$s2l5_evi_delta_k_ln_mean_seg_coef$$ & $$s2l5_evi_delta_r_ln_mean_seg_coef$$  &  $$s2l5_any_water_crop_seg_coef$$ & $$s2l5_mech_farm_equip_seg_coef$$ \\
+    &  ($$s2l5_ag_share11_seg_se$$) &  ($$s2l5_evi_delta_k_ln_mean_seg_se$$) & ($$s2l5_evi_delta_r_ln_mean_seg_se$$)  &     ($$s2l5_any_water_crop_seg_se$$)   &     ($$s2l5_mech_farm_equip_seg_se$$)   \\
+    & & & & & \\
+    \hspace{0.5cm}Control group mean&  $$s2l5_ag_share11_seg_mean$$ & $$s2l5_evi_delta_k_ln_mean_seg_mean$$  & $$s2l5_evi_delta_r_ln_mean_seg_mean$$   & $$s2l5_any_water_crop_seg_mean$$   &  $$s2l5_mech_farm_equip_seg_mean$$   \\
+    \hspace{0.5cm}Observations& $$s2l5_ag_share11_seg_samp$$ &  $$s2l5_evi_delta_k_ln_mean_seg_samp$$   &  $$s2l5_evi_delta_r_ln_mean_seg_samp$$   &  $$s2l5_any_water_crop_seg_samp$$   & $$s2l5_mech_farm_equip_seg_samp$$  \\
+    \hspace{0.5cm}R$^{2}$& $$s2l5_ag_share11_seg_r2$$ & $$s2l5_evi_delta_k_ln_mean_seg_r2$$   & $$s2l5_evi_delta_r_ln_mean_seg_r2$$   &  $$s2l5_any_water_crop_seg_r2$$  &  $$s2l5_mech_farm_equip_seg_r2$$   \\
+    \hline
+
+    \multicolumn{6}{l}{\textit{Panel F: Main analysis sample, no land area weighting}} \\
+    \hline\hline
+    \hspace{0.5cm}Below canal& $$nowt_ag_share11_elev_coef$$ & $$nowt_evi_delta_k_ln_mean_elev_coef$$ & $$nowt_evi_delta_r_ln_mean_elev_coef$$  &  $$nowt_any_water_crop_elev_coef$$ & $$nowt_mech_farm_equip_elev_coef$$ \\
+    &  ($$nowt_ag_share11_elev_se$$) &  ($$nowt_evi_delta_k_ln_mean_elev_se$$) & ($$nowt_evi_delta_r_ln_mean_elev_se$$)  &     ($$nowt_any_water_crop_elev_se$$)   &     ($$nowt_mech_farm_equip_elev_se$$)   \\
+    & & & & & \\
+    \hspace{0.5cm}Control group mean&  $$nowt_ag_share11_elev_mean$$ & $$nowt_evi_delta_k_ln_mean_elev_mean$$  & $$nowt_evi_delta_r_ln_mean_elev_mean$$   & $$nowt_any_water_crop_elev_mean$$   &  $$nowt_mech_farm_equip_elev_mean$$   \\
+    \hspace{0.5cm}Observations& $$nowt_ag_share11_elev_samp$$ &  $$nowt_evi_delta_k_ln_mean_elev_samp$$   &  $$nowt_evi_delta_r_ln_mean_elev_samp$$   &  $$nowt_any_water_crop_elev_samp$$   & $$nowt_mech_farm_equip_elev_samp$$  \\
+    \hspace{0.5cm}R$^{2}$& $$nowt_ag_share11_elev_r2$$ & $$nowt_evi_delta_k_ln_mean_elev_r2$$   & $$nowt_evi_delta_r_ln_mean_elev_r2$$   &  $$nowt_any_water_crop_elev_r2$$  &  $$nowt_mech_farm_equip_elev_r2$$   \\
+    \hline
+        \multicolumn{6}{l}{\textit{Panel G: Main analysis sample, Conley standard errors}} \\
+    \hline\hline
+    \hspace{0.5cm}Below canal& $$conley_ag_share11_elev_coef$$ & $$conley_evi_delta_k_ln_mean_elev_coef$$ & $$conley_evi_delta_r_ln_mean_elev_coef$$  &  $$conley_any_water_crop_elev_coef$$ & $$conley_mech_farm_equip_elev_coef$$ \\
+    &  ($$conley_ag_share11_elev_se$$) &  ($$conley_evi_delta_k_ln_mean_elev_se$$) & ($$conley_evi_delta_r_ln_mean_elev_se$$)  &     ($$conley_any_water_crop_elev_se$$)   &     ($$conley_mech_farm_equip_elev_se$$)   \\
+    & & & & & \\
+    \hspace{0.5cm}Control group mean&  $$conley_ag_share11_elev_mean$$ & $$conley_evi_delta_k_ln_mean_elev_mean$$  & $$conley_evi_delta_r_ln_mean_elev_mean$$   & $$conley_any_water_crop_elev_mean$$   &  $$conley_mech_farm_equip_elev_mean$$   \\
+    \hspace{0.5cm}Observations& $$conley_ag_share11_elev_samp$$ &  $$conley_evi_delta_k_ln_mean_elev_samp$$   &  $$conley_evi_delta_r_ln_mean_elev_samp$$   &  $$conley_any_water_crop_elev_samp$$   & $$conley_mech_farm_equip_elev_samp$$  \\
+    \hspace{0.5cm}R$^{2}$& $$conley_ag_share11_elev_r2$$ & $$conley_evi_delta_k_ln_mean_elev_r2$$   & $$conley_evi_delta_r_ln_mean_elev_r2$$   &  $$conley_any_water_crop_elev_r2$$  &  $$conley_mech_farm_equip_elev_r2$$   \\
+    \hline
+
+    \multicolumn{6}{l}{$^{*}p<0.10, ^{**}p<0.05, ^{***}p<0.01$} \\
+\end{tabular}}
