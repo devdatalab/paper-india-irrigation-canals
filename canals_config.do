@@ -5,6 +5,7 @@ global out ~/out
 global tmp ~/scratch
 
 /* DO NOT CHANGE ANY SETTINGS BELOW */
+adopath ++ $ccode/ado
 global STATATEX_PATH $ccode/stata-tex
 
 /* set the globals for lists of variables used in the analysis */
