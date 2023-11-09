@@ -111,7 +111,7 @@ foreach i of loc endog {
 
 local wdir `c(pwd)'
 
-local $tmp
+local tmpdir $tmp
 
 markout `touse' `Y' `X' `exog' `endog'
 di "keeping non-missing observations"
