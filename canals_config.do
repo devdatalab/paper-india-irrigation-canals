@@ -7,7 +7,7 @@ global tmp ~/scratch
 /* DO NOT CHANGE ANY SETTINGS BELOW */
 adopath ++ $ccode/ado
 global STATATEX_PATH $ccode/stata-tex
-mkdir $out/did
+cap mkdir $out/did
 
 /* set the globals for lists of variables used in the analysis */
 global ag_outcomes irr_share11 ag_share11 any_water_crop count_water_crop mech_farm_equip  evi_delta_r_ln_mean evi_delta_k_ln_mean irr_share_canal irr_share_tubewell irr_share_oth total_land_acre land_hold_land_own1 two_crop_acre
