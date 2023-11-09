@@ -147,7 +147,7 @@ def make_spill_coefplot(vselect="All", fnsuffix="main", bal="webal", grp="below"
 
     # set the title of the plot
     title = f"{fps[vselect]}_spillovers_coefplot_{grp}_{fnsuffix}.png"
-    print(title_
+    print(title)
     outfp = f"{out}/{title}"
 
     # save

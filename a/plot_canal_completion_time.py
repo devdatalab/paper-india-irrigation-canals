@@ -3,6 +3,8 @@ import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import pandas as pd
+
+sys.path.insert(0, os.getcwd())
 from canals_config import out, cdata, tmp
 
 # set some master parameters to make the font look good
