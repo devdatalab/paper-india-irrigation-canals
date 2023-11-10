@@ -1,0 +1,79 @@
+{\setlength{\tabcolsep}{0.1em}
+  \begin{tabular}{lcccccc}
+
+    & Population density & Total emp. & Services emp. & Manuf. emp & Consumption pc & Consumption pc (log) \\
+    & (log) & (share of adult pop.) & (share of adult pop.) & (share of adult pop.) & (log, landless HHs) & (log, land-owning HHs)\\
+    \hline
+    
+    \multicolumn{7}{l}{\textit{Panel A: All canal-area settlements, minus donut hole}} \\
+    \hline\hline
+    \hspace{0.5cm}Below canal& $$donut_popdens_poly11_log_elev_coef$$ & $$donut_ec13_emp_pc_elev_coef$$   & $$donut_ec13_emp_serv_pc_elev_coef$$   &  $$donut_ec13_emp_manuf_pc_elev_coef$$   & $$donut_cons_pc_land_own0_log_elev_coef$$ & $$donut_cons_pc_land_own1_log_elev_coef$$\\
+    &     ($$donut_popdens_poly11_log_elev_se$$)   &     ($$donut_ec13_emp_pc_elev_se$$)   &     ($$donut_ec13_emp_serv_pc_elev_se$$)   &     ($$donut_ec13_emp_manuf_pc_elev_se$$)   &     ($$donut_cons_pc_land_own0_log_elev_se$$) &     ($$donut_cons_pc_land_own1_log_elev_se$$)  \\
+    & & & & & & \\
+    \hspace{0.5cm}Control group mean& $$donut_popdens_poly11_log_elev_mean$$   &  $$donut_ec13_emp_pc_elev_mean$$   & $$donut_ec13_emp_serv_pc_elev_mean$$  & $$donut_ec13_emp_manuf_pc_elev_mean$$   &  $$donut_cons_pc_land_own0_log_elev_mean$$ &  $$donut_cons_pc_land_own1_log_elev_mean$$  \\
+    \hspace{0.5cm}Observations&  $$donut_popdens_poly11_log_elev_samp$$  &  $$donut_ec13_emp_pc_elev_samp$$   &  $$donut_ec13_emp_serv_pc_elev_samp$$   &  $$donut_ec13_emp_manuf_pc_elev_samp$$ & $$donut_cons_pc_land_own0_log_elev_samp$$  & $$donut_cons_pc_land_own1_log_elev_samp$$ \\
+    \hspace{0.5cm}R$^{2}$&  $$donut_popdens_poly11_log_elev_r2$$   &  $$donut_ec13_emp_pc_elev_r2$$   &  $$donut_ec13_emp_serv_pc_elev_r2$$   & $$donut_ec13_emp_manuf_pc_elev_r2$$  & $$donut_cons_pc_land_own0_log_elev_r2$$  & $$donut_cons_pc_land_own1_log_elev_r2$$ \\
+    \hline
+
+    \multicolumn{7}{l}{\textit{Panel B: Canal-area settlements balanced on ruggedness, using 25$\mathrm{^{th}}$ percentile settlement elevation}} \\
+    \hline\hline
+    \hspace{0.5cm}Below canal& $$p25_popdens_poly11_log_elev_coef$$ & $$p25_ec13_emp_pc_elev_coef$$   & $$p25_ec13_emp_serv_pc_elev_coef$$   &  $$p25_ec13_emp_manuf_pc_elev_coef$$   & $$p25_cons_pc_land_own0_log_elev_coef$$ & $$p25_cons_pc_land_own1_log_elev_coef$$\\
+    &     ($$p25_popdens_poly11_log_elev_se$$)   &     ($$p25_ec13_emp_pc_elev_se$$)   &     ($$p25_ec13_emp_serv_pc_elev_se$$)   &     ($$p25_ec13_emp_manuf_pc_elev_se$$)   &     ($$p25_cons_pc_land_own0_log_elev_se$$) &     ($$p25_cons_pc_land_own1_log_elev_se$$)  \\
+    & & & & & & \\
+    \hspace{0.5cm}Control group mean& $$p25_popdens_poly11_log_elev_mean$$   &  $$p25_ec13_emp_pc_elev_mean$$   & $$p25_ec13_emp_serv_pc_elev_mean$$  & $$p25_ec13_emp_manuf_pc_elev_mean$$   &  $$p25_cons_pc_land_own0_log_elev_mean$$ &  $$p25_cons_pc_land_own1_log_elev_mean$$  \\
+    \hspace{0.5cm}Observations&  $$p25_popdens_poly11_log_elev_samp$$  &  $$p25_ec13_emp_pc_elev_samp$$   &  $$p25_ec13_emp_serv_pc_elev_samp$$   &  $$p25_ec13_emp_manuf_pc_elev_samp$$ & $$p25_cons_pc_land_own0_log_elev_samp$$  & $$p25_cons_pc_land_own1_log_elev_samp$$ \\
+    \hspace{0.5cm}R$^{2}$&  $$p25_popdens_poly11_log_elev_r2$$   &  $$p25_ec13_emp_pc_elev_r2$$   &  $$p25_ec13_emp_serv_pc_elev_r2$$   & $$p25_ec13_emp_manuf_pc_elev_r2$$  & $$p25_cons_pc_land_own0_log_elev_r2$$ & $$p25_cons_pc_land_own1_log_elev_r2$$ \\
+    \hline
+
+    \multicolumn{7}{l}{\textit{Panel C: Main analysis sample, excluding villages intersected by a canal}} \\
+    \hline\hline
+    \hspace{0.5cm}Below canal& $$hole_popdens_poly11_log_elev_coef$$ & $$hole_ec13_emp_pc_elev_coef$$   & $$hole_ec13_emp_serv_pc_elev_coef$$   &  $$hole_ec13_emp_manuf_pc_elev_coef$$   & $$hole_cons_pc_land_own0_log_elev_coef$$ & $$hole_cons_pc_land_own1_log_elev_coef$$\\
+    &     ($$hole_popdens_poly11_log_elev_se$$)   &     ($$hole_ec13_emp_pc_elev_se$$)   &     ($$hole_ec13_emp_serv_pc_elev_se$$)   &     ($$hole_ec13_emp_manuf_pc_elev_se$$)   &     ($$hole_cons_pc_land_own0_log_elev_se$$) &     ($$hole_cons_pc_land_own1_log_elev_se$$)  \\
+    & & & & & & \\
+    \hspace{0.5cm}Control group mean& $$hole_popdens_poly11_log_elev_mean$$   &  $$hole_ec13_emp_pc_elev_mean$$   & $$hole_ec13_emp_serv_pc_elev_mean$$  & $$hole_ec13_emp_manuf_pc_elev_mean$$   &  $$hole_cons_pc_land_own0_log_elev_mean$$ &  $$hole_cons_pc_land_own1_log_elev_mean$$  \\
+    \hspace{0.5cm}Observations&  $$hole_popdens_poly11_log_elev_samp$$  &  $$hole_ec13_emp_pc_elev_samp$$   &  $$hole_ec13_emp_serv_pc_elev_samp$$   &  $$hole_ec13_emp_manuf_pc_elev_samp$$ & $$hole_cons_pc_land_own0_log_elev_samp$$  & $$hole_cons_pc_land_own1_log_elev_samp$$ \\
+    \hspace{0.5cm}R$^{2}$&  $$hole_popdens_poly11_log_elev_r2$$   &  $$hole_ec13_emp_pc_elev_r2$$   &  $$hole_ec13_emp_serv_pc_elev_r2$$   & $$hole_ec13_emp_manuf_pc_elev_r2$$  & $$hole_cons_pc_land_own0_log_elev_r2$$ & $$hole_cons_pc_land_own1_log_elev_r2$$ \\
+    \hline
+
+        \multicolumn{7}{l}{\textit{Panel D: Main analysis sample, additional control for distance to canal}} \\
+    \hline\hline
+    \hspace{0.5cm}Below canal& $$control_popdens_poly11_log_elev_coef$$ & $$control_ec13_emp_pc_elev_coef$$   & $$control_ec13_emp_serv_pc_elev_coef$$   &  $$control_ec13_emp_manuf_pc_elev_coef$$   & $$control_cons_pc_land_own0_log_elev_coef$$ & $$control_cons_pc_land_own1_log_elev_coef$$\\
+    &     ($$control_popdens_poly11_log_elev_se$$)   &     ($$control_ec13_emp_pc_elev_se$$)   &     ($$control_ec13_emp_serv_pc_elev_se$$)   &     ($$control_ec13_emp_manuf_pc_elev_se$$)   &     ($$control_cons_pc_land_own0_log_elev_se$$) &     ($$control_cons_pc_land_own1_log_elev_se$$)  \\
+    & & & & & & \\
+    \hspace{0.5cm}Control group mean& $$control_popdens_poly11_log_elev_mean$$   &  $$control_ec13_emp_pc_elev_mean$$   & $$control_ec13_emp_serv_pc_elev_mean$$  & $$control_ec13_emp_manuf_pc_elev_mean$$   &  $$control_cons_pc_land_own0_log_elev_mean$$ &  $$control_cons_pc_land_own1_log_elev_mean$$  \\
+    \hspace{0.5cm}Observations&  $$control_popdens_poly11_log_elev_samp$$  &  $$control_ec13_emp_pc_elev_samp$$   &  $$control_ec13_emp_serv_pc_elev_samp$$   &  $$control_ec13_emp_manuf_pc_elev_samp$$ & $$control_cons_pc_land_own0_log_elev_samp$$  & $$control_cons_pc_land_own1_log_elev_samp$$ \\
+    \hspace{0.5cm}R$^{2}$&  $$control_popdens_poly11_log_elev_r2$$   &  $$control_ec13_emp_pc_elev_r2$$   &  $$control_ec13_emp_serv_pc_elev_r2$$   & $$control_ec13_emp_manuf_pc_elev_r2$$  & $$control_cons_pc_land_own0_log_elev_r2$$ & $$control_cons_pc_land_own1_log_elev_r2$$ \\
+    \hline
+
+    \multicolumn{7}{l}{\textit{Panel E: Main analysis sample, only long and straight canals with canal-segment fixed effects}} \\
+    \hline\hline
+    \hspace{0.5cm}Below canal& $$s2l5_popdens_poly11_log_seg_coef$$ & $$s2l5_ec13_emp_pc_seg_coef$$   & $$s2l5_ec13_emp_serv_pc_seg_coef$$   &  $$s2l5_ec13_emp_manuf_pc_seg_coef$$   & $$s2l5_cons_pc_land_own0_log_seg_coef$$ & $$s2l5_cons_pc_land_own1_log_seg_coef$$\\
+    &     ($$s2l5_popdens_poly11_log_seg_se$$)   &     ($$s2l5_ec13_emp_pc_seg_se$$)   &     ($$s2l5_ec13_emp_serv_pc_seg_se$$)   &     ($$s2l5_ec13_emp_manuf_pc_seg_se$$)   &     ($$s2l5_cons_pc_land_own0_log_seg_se$$) &     ($$s2l5_cons_pc_land_own1_log_seg_se$$)  \\
+    & & & & & & \\
+    \hspace{0.5cm}Control group mean& $$s2l5_popdens_poly11_log_seg_mean$$   &  $$s2l5_ec13_emp_pc_seg_mean$$   & $$s2l5_ec13_emp_serv_pc_seg_mean$$  & $$s2l5_ec13_emp_manuf_pc_seg_mean$$   &  $$s2l5_cons_pc_land_own0_log_seg_mean$$ &  $$s2l5_cons_pc_land_own1_log_seg_mean$$  \\
+    \hspace{0.5cm}Observations&  $$s2l5_popdens_poly11_log_seg_samp$$  &  $$s2l5_ec13_emp_pc_seg_samp$$   &  $$s2l5_ec13_emp_serv_pc_seg_samp$$   &  $$s2l5_ec13_emp_manuf_pc_seg_samp$$ & $$s2l5_cons_pc_land_own0_log_seg_samp$$  & $$s2l5_cons_pc_land_own1_log_seg_samp$$ \\
+    \hspace{0.5cm}R$^{2}$&  $$s2l5_popdens_poly11_log_seg_r2$$   &  $$s2l5_ec13_emp_pc_seg_r2$$   &  $$s2l5_ec13_emp_serv_pc_seg_r2$$   & $$s2l5_ec13_emp_manuf_pc_seg_r2$$  & $$s2l5_cons_pc_land_own0_log_seg_r2$$ & $$s2l5_cons_pc_land_own1_log_seg_r2$$ \\
+    \hline
+
+    \multicolumn{7}{l}{\textit{Panel F: Main analysis sample, no land area weighting}} \\
+    \hline\hline
+    \hspace{0.5cm}Below canal& $$nowt_popdens_poly11_log_elev_coef$$ & $$nowt_ec13_emp_pc_elev_coef$$   & $$nowt_ec13_emp_serv_pc_elev_coef$$   &  $$nowt_ec13_emp_manuf_pc_elev_coef$$   & $$nowt_cons_pc_land_own0_log_elev_coef$$ & $$nowt_cons_pc_land_own1_log_elev_coef$$\\
+    &     ($$nowt_popdens_poly11_log_elev_se$$)   &     ($$nowt_ec13_emp_pc_elev_se$$)   &     ($$nowt_ec13_emp_serv_pc_elev_se$$)   &     ($$nowt_ec13_emp_manuf_pc_elev_se$$)   &     ($$nowt_cons_pc_land_own0_log_elev_se$$) &  ($$nowt_cons_pc_land_own1_log_elev_se$$)   \\
+    & & & & & & \\
+    \hspace{0.5cm}Control group mean& $$nowt_popdens_poly11_log_elev_mean$$   &  $$nowt_ec13_emp_pc_elev_mean$$   & $$nowt_ec13_emp_serv_pc_elev_mean$$  & $$nowt_ec13_emp_manuf_pc_elev_mean$$   &  $$nowt_cons_pc_land_own0_log_elev_mean$$  &  $$nowt_cons_pc_land_own1_log_elev_mean$$  \\
+    \hspace{0.5cm}Observations&  $$nowt_popdens_poly11_log_elev_samp$$  &  $$nowt_ec13_emp_pc_elev_samp$$   &  $$nowt_ec13_emp_serv_pc_elev_samp$$   &  $$nowt_ec13_emp_manuf_pc_elev_samp$$ & $$nowt_cons_pc_land_own0_log_elev_samp$$ & $$nowt_cons_pc_land_own1_log_elev_samp$$  \\
+    \hspace{0.5cm}R$^{2}$&  $$nowt_popdens_poly11_log_elev_r2$$   &  $$nowt_ec13_emp_pc_elev_r2$$   &  $$nowt_ec13_emp_serv_pc_elev_r2$$   & $$nowt_ec13_emp_manuf_pc_elev_r2$$  & $$nowt_cons_pc_land_own0_log_elev_r2$$  & $$nowt_cons_pc_land_own1_log_elev_r2$$ \\
+    \hline
+
+        \multicolumn{7}{l}{\textit{Panel G: Main analysis sample, Conley standard errors}} \\
+    \hline\hline
+    \hspace{0.5cm}Below canal& $$conley_popdens_poly11_log_elev_coef$$ & $$conley_ec13_emp_pc_elev_coef$$   & $$conley_ec13_emp_serv_pc_elev_coef$$   &  $$conley_ec13_emp_manuf_pc_elev_coef$$   & $$conley_cons_pc_land_own0_log_elev_coef$$ & $$conley_cons_pc_land_own1_log_elev_coef$$\\
+    &     ($$conley_popdens_poly11_log_elev_se$$)   &     ($$conley_ec13_emp_pc_elev_se$$)   &     ($$conley_ec13_emp_serv_pc_elev_se$$)   &     ($$conley_ec13_emp_manuf_pc_elev_se$$)   &     ($$conley_cons_pc_land_own0_log_elev_se$$) &  ($$conley_cons_pc_land_own1_log_elev_se$$)   \\
+    & & & & & & \\
+    \hspace{0.5cm}Control group mean& $$conley_popdens_poly11_log_elev_mean$$   &  $$conley_ec13_emp_pc_elev_mean$$   & $$conley_ec13_emp_serv_pc_elev_mean$$  & $$conley_ec13_emp_manuf_pc_elev_mean$$   &  $$conley_cons_pc_land_own0_log_elev_mean$$  &  $$conley_cons_pc_land_own1_log_elev_mean$$  \\
+    \hspace{0.5cm}Observations&  $$conley_popdens_poly11_log_elev_samp$$  &  $$conley_ec13_emp_pc_elev_samp$$   &  $$conley_ec13_emp_serv_pc_elev_samp$$   &  $$conley_ec13_emp_manuf_pc_elev_samp$$ & $$conley_cons_pc_land_own0_log_elev_samp$$ & $$conley_cons_pc_land_own1_log_elev_samp$$  \\
+    \hspace{0.5cm}R$^{2}$&  $$conley_popdens_poly11_log_elev_r2$$   &  $$conley_ec13_emp_pc_elev_r2$$   &  $$conley_ec13_emp_serv_pc_elev_r2$$   & $$conley_ec13_emp_manuf_pc_elev_r2$$  & $$conley_cons_pc_land_own0_log_elev_r2$$  & $$conley_cons_pc_land_own1_log_elev_r2$$ \\
+    \hline
+    
+    \multicolumn{7}{l}{$^{*}p<0.10, ^{**}p<0.05, ^{***}p<0.01$} \\
+\end{tabular}}
