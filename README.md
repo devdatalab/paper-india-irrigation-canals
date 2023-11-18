@@ -1,13 +1,14 @@
 # india-irrigation-canals-paper
-Replication repository for The Long-Run Development Impacts of Agricultural Productivity Gains: Evidence from Irrigation Canals in India
 
-This respository contains the code required to replicate all tables and figures from the paper. Replication data can be found at this Google Drive [link](https://drive.google.com/drive/folders/10iH6dpTZC6664dBKxwym3ivUJihohGyr). 
+This is the replication repository for <a href="https://paulnovosad.com/pdf/acgn-canals.pdf">"The Long-Run Development Impacts of Agricultural Productivity Gains: Evidence from Irrigation Canals in India" (Asher, Campion, Gollin, Novosad)</a>
+
+This repository contains the code required to replicate all tables and figures from the paper. Replication data can be found in this Google Drive folder: [link](https://drive.google.com/drive/folders/10iH6dpTZC6664dBKxwym3ivUJihohGyr). 
 
 ## Dataset list
 - `canals_analysis_data.dta`: main analysis dataset at the village and town level
 - `canals_spillovers.dta`: additional variables used for the spillovers analysis at the village and town level
 - `canal_construction_data.dta`: canal data on construction, at the canal segment level (matching to the GIS data)
-- `pc81_canals_working.dta`: National Samples Survey data on migration at the indiviudal level, with district-level variation in canal coverage
+- `pc81_canals_working.dta`: National Sample Survey data on migration at the individual level, with district-level variation in canal coverage
 - `pc51_balance_data.dta`: subset of main data matched to 1951 villages with canals constructed after 1951
 - `town_panel_equal_area.dta`: town panel data
 
@@ -20,15 +21,15 @@ This respository contains the code required to replicate all tables and figures 
 | ccode    | the base filepath for the repository                                       |
 | cdata    | the folder where the data files (from Google Drive link above) are saved   |
 | out      | the folder where you want all outputs saved                                |
-| tmp      | a scratch folder where intermediarte outputs can be saved                  |
+| tmp      | a scratch folder where intermediate outputs can be saved                  |
 
 3. Run `canals_config.do` in Stata. This will set all configurations, no need to change any other files.
-4. Open `make_canals_analysis.do` and run in Stata
+4. Open `make_canals_analysis.do` and run in Stata.
 
 ## Computational requirements
 Most code is run in Stata, with the relevant packages included in the `ado` folder in this repository.
 
-The excpetion are the coefficient plots which are created using python. Only a very few basic packages are required: `pandas`, `matplotlib`, and `numpy`. Ensure that whatever python environment you are using is activated (i.e. Stata knows where to access the environment) before running the `make_canals_analysis.do` file in Stata, as it will call the code requiring python.
+The exception are the coefficient plots which are created using python. Only a very few basic packages are required: `pandas`, `matplotlib`, and `numpy`. Ensure that whatever python environment you are using is activated (i.e. Stata knows where to access the environment) before running the `make_canals_analysis.do` file in Stata, as it will call the code requiring python.
 
 Or, if you do not want to run the python-dependent code, comment out the lines in the Figures section of the `make_canals_analysis.do` file before running it. 
 
