@@ -1,0 +1,81 @@
+{\setlength{\tabcolsep}{0.1em}
+  \begin{tabular}{lcccc}
+    & Total irrigated area & Canal irrigated area & Tubewell irrigated area  & Other irrigated area \\
+    & (share of ag. land) & (share of ag. land) & (share of ag. land)  & (share of ag. land) \\
+    \hline
+
+    \multicolumn{5}{l}{\textit{Panel A: All canal-area settlements, minus donut hole}} \\
+    \hline\hline
+    \hspace{0.5cm}Below canal& $$donut_irr_share11_elev_coef$$ &  $$donut_irr_share_canal_elev_coef$$ & $$donut_irr_share_tubewell_elev_coef$$  & $$donut_irr_share_oth_elev_coef$$   \\
+    &  ($$donut_irr_share11_elev_se$$) & ($$donut_irr_share_canal_elev_se$$)   &     ($$donut_irr_share_tubewell_elev_se$$)   &        ($$donut_irr_share_oth_elev_se$$)   \\
+    & & & & \\
+    \hspace{0.5cm}Control group mean& $$donut_irr_share11_elev_mean$$ &  $$donut_irr_share_canal_elev_mean$$  &  $$donut_irr_share_tubewell_elev_mean$$   &  $$donut_irr_share_oth_elev_mean$$  \\
+    \hspace{0.5cm}Observations& $$donut_irr_share11_elev_samp$$  & $$donut_irr_share_canal_elev_samp$$  &  $$donut_irr_share_tubewell_elev_samp$$    & $$donut_irr_share_oth_elev_samp$$   \\
+    \hspace{0.5cm}R$^{2}$& $$donut_irr_share11_elev_r2$$  & $$donut_irr_share_canal_elev_r2$$  & $$donut_irr_share_tubewell_elev_r2$$  & $$donut_irr_share_oth_elev_r2$$ \\
+    \hline
+    
+    \multicolumn{5}{l}{\textit{Panel B: Canal-area settlements balanced on ruggedness, using 25$\mathrm{^{th}}$ percentile settlement elevation}} \\
+    \hline\hline
+    \hspace{0.5cm}Below canal& $$p25_irr_share11_elev_coef$$ &  $$p25_irr_share_canal_elev_coef$$ & $$p25_irr_share_tubewell_elev_coef$$  & $$p25_irr_share_oth_elev_coef$$   \\
+    &  ($$p25_irr_share11_elev_se$$) & ($$p25_irr_share_canal_elev_se$$)   &     ($$p25_irr_share_tubewell_elev_se$$)   &         ($$p25_irr_share_oth_elev_se$$)   \\
+    & & & & \\
+    \hspace{0.5cm}Control group mean& $$p25_irr_share11_elev_mean$$ &  $$p25_irr_share_canal_elev_mean$$  &  $$p25_irr_share_tubewell_elev_mean$$   &  $$p25_irr_share_oth_elev_mean$$  \\
+    \hspace{0.5cm}Observations& $$p25_irr_share11_elev_samp$$  & $$p25_irr_share_canal_elev_samp$$  &  $$p25_irr_share_tubewell_elev_samp$$   & $$p25_irr_share_oth_elev_samp$$   \\
+    \hspace{0.5cm}R$^{2}$& $$p25_irr_share11_elev_r2$$  & $$p25_irr_share_canal_elev_r2$$  & $$p25_irr_share_tubewell_elev_r2$$   & $$p25_irr_share_oth_elev_r2$$ \\
+    \hline
+
+   \multicolumn{5}{l}{\textit{Panel C: Main analysis sample, excluding villages intersected by a canal}} \\
+    \hline\hline
+    \hspace{0.5cm}Below canal& $$hole_irr_share11_elev_coef$$ &  $$hole_irr_share_canal_elev_coef$$ & $$hole_irr_share_tubewell_elev_coef$$  & $$hole_irr_share_oth_elev_coef$$   \\
+    &  ($$hole_irr_share11_elev_se$$) & ($$hole_irr_share_canal_elev_se$$)   &     ($$hole_irr_share_tubewell_elev_se$$)   &         ($$hole_irr_share_oth_elev_se$$)   \\
+    & & & & \\
+    \hspace{0.5cm}Control group mean& $$hole_irr_share11_elev_mean$$ &  $$hole_irr_share_canal_elev_mean$$  &  $$hole_irr_share_tubewell_elev_mean$$   &  $$hole_irr_share_oth_elev_mean$$  \\
+    \hspace{0.5cm}Observations& $$hole_irr_share11_elev_samp$$  & $$hole_irr_share_canal_elev_samp$$  &  $$hole_irr_share_tubewell_elev_samp$$   & $$hole_irr_share_oth_elev_samp$$   \\
+    \hspace{0.5cm}R$^{2}$& $$hole_irr_share11_elev_r2$$  & $$hole_irr_share_canal_elev_r2$$  & $$hole_irr_share_tubewell_elev_r2$$   & $$hole_irr_share_oth_elev_r2$$ \\
+    \hline
+
+    \multicolumn{5}{l}{\textit{Panel D: Main analysis sample, additional control for distance to canal}} \\
+    \hline\hline
+    \hspace{0.5cm}Below canal& $$control_irr_share11_elev_coef$$ &  $$control_irr_share_canal_elev_coef$$ & $$control_irr_share_tubewell_elev_coef$$  & $$control_irr_share_oth_elev_coef$$   \\
+    &  ($$control_irr_share11_elev_se$$) & ($$control_irr_share_canal_elev_se$$)   &     ($$control_irr_share_tubewell_elev_se$$)   &         ($$control_irr_share_oth_elev_se$$)   \\
+    & & & & \\
+    \hspace{0.5cm}Control group mean& $$control_irr_share11_elev_mean$$ &  $$control_irr_share_canal_elev_mean$$  &  $$control_irr_share_tubewell_elev_mean$$   &  $$control_irr_share_oth_elev_mean$$  \\
+    \hspace{0.5cm}Observations& $$control_irr_share11_elev_samp$$  & $$control_irr_share_canal_elev_samp$$  &  $$control_irr_share_tubewell_elev_samp$$   & $$control_irr_share_oth_elev_samp$$   \\
+    \hspace{0.5cm}R$^{2}$& $$control_irr_share11_elev_r2$$  & $$control_irr_share_canal_elev_r2$$  & $$control_irr_share_tubewell_elev_r2$$   & $$control_irr_share_oth_elev_r2$$ \\
+    \hline
+
+     \multicolumn{5}{l}{\textit{Panel E: Main analysis sample, only long and straight canals with canal-segment fixed effects}} \\
+    \hline\hline
+    \hspace{0.5cm}Below canal& $$s2l5_irr_share11_seg_coef$$ &  $$s2l5_irr_share_canal_seg_coef$$ & $$s2l5_irr_share_tubewell_seg_coef$$  & $$s2l5_irr_share_oth_seg_coef$$   \\
+    &  ($$s2l5_irr_share11_seg_se$$) & ($$s2l5_irr_share_canal_seg_se$$)   &     ($$s2l5_irr_share_tubewell_seg_se$$)   &         ($$s2l5_irr_share_oth_seg_se$$)   \\
+    & & & & \\
+    \hspace{0.5cm}Control group mean& $$s2l5_irr_share11_seg_mean$$ &  $$s2l5_irr_share_canal_seg_mean$$  &  $$s2l5_irr_share_tubewell_seg_mean$$   &  $$s2l5_irr_share_oth_seg_mean$$  \\
+    \hspace{0.5cm}Observations& $$s2l5_irr_share11_seg_samp$$  & $$s2l5_irr_share_canal_seg_samp$$  &  $$s2l5_irr_share_tubewell_seg_samp$$   & $$s2l5_irr_share_oth_seg_samp$$   \\
+    \hspace{0.5cm}R$^{2}$& $$s2l5_irr_share11_seg_r2$$  & $$s2l5_irr_share_canal_seg_r2$$  & $$s2l5_irr_share_tubewell_seg_r2$$   & $$s2l5_irr_share_oth_seg_r2$$ \\
+    \hline
+
+    \multicolumn{5}{l}{\textit{Panel F: Main analysis sample, no land area weighting}} \\
+    \hline\hline
+    \hspace{0.5cm} Below canal& $$nowt_irr_share11_elev_coef$$ &  $$nowt_irr_share_canal_elev_coef$$ & $$nowt_irr_share_tubewell_elev_coef$$    & $$nowt_irr_share_oth_elev_coef$$   \\
+    &  ($$nowt_irr_share11_elev_se$$) & ($$nowt_irr_share_canal_elev_se$$)   &     ($$nowt_irr_share_tubewell_elev_se$$)    &     ($$nowt_irr_share_oth_elev_se$$)   \\
+    & & & & \\
+    \hspace{0.5cm}Control group mean& $$nowt_irr_share11_elev_mean$$ &  $$nowt_irr_share_canal_elev_mean$$  &  $$nowt_irr_share_tubewell_elev_mean$$   &  $$nowt_irr_share_oth_elev_mean$$  \\
+    \hspace{0.5cm}Observations& $$nowt_irr_share11_elev_samp$$  & $$nowt_irr_share_canal_elev_samp$$  &  $$nowt_irr_share_tubewell_elev_samp$$   &  $$nowt_irr_share_oth_elev_samp$$   \\
+    \hspace{0.5cm}R$^{2}$& $$nowt_irr_share11_elev_r2$$  & $$nowt_irr_share_canal_elev_r2$$  & $$nowt_irr_share_tubewell_elev_r2$$   & $$nowt_irr_share_oth_elev_r2$$ \\
+    \hline
+
+    \multicolumn{5}{l}{\textit{Panel G: Main analysis sample, Conley standard errors}} \\
+    \hline\hline
+    \hspace{0.5cm} Below canal& $$conley_irr_share11_elev_coef$$ &  $$conley_irr_share_canal_elev_coef$$ & $$conley_irr_share_tubewell_elev_coef$$    & $$conley_irr_share_oth_elev_coef$$   \\
+    &  ($$conley_irr_share11_elev_se$$) & ($$conley_irr_share_canal_elev_se$$)   &     ($$conley_irr_share_tubewell_elev_se$$)    &     ($$conley_irr_share_oth_elev_se$$)   \\
+    & & & & \\
+    \hspace{0.5cm}Control group mean& $$conley_irr_share11_elev_mean$$ &  $$conley_irr_share_canal_elev_mean$$  &  $$conley_irr_share_tubewell_elev_mean$$   &  $$conley_irr_share_oth_elev_mean$$  \\
+    \hspace{0.5cm}Observations& $$conley_irr_share11_elev_samp$$  & $$conley_irr_share_canal_elev_samp$$  &  $$conley_irr_share_tubewell_elev_samp$$   &  $$conley_irr_share_oth_elev_samp$$   \\
+    \hspace{0.5cm}R$^{2}$& $$conley_irr_share11_elev_r2$$  & $$conley_irr_share_canal_elev_r2$$  & $$conley_irr_share_tubewell_elev_r2$$   & $$conley_irr_share_oth_elev_r2$$ \\
+    \hline
+
+    \multicolumn{4}{l}{$^{*}p<0.10, ^{**}p<0.05, ^{***}p<0.01$} \\
+    
+  \end{tabular}
+  
+}

@@ -1,0 +1,72 @@
+\begin{center}
+{\setlength{\tabcolsep}{2em}
+  \resizebox{0.8\textwidth}{!}{
+    \begin{tabular}{lcccc}
+      \multicolumn{4}{l}{\Large\textit{Panel A. Irrigation outcomes}} \\
+      \hline\hline
+      & Total irrigated area & Canal irrigated area & Tubewell irrigated area & Other irrigated area \\
+      & (share of ag. land) & (share of ag. land) & (share of ag. land) & (share of ag. land) \\
+      \hline
+      
+      \hspace{0.5cm}Below canal& $$p25_irr_share11_elev_coef$$ &  $$p25_irr_share_canal_elev_coef$$ & $$p25_irr_share_tubewell_elev_coef$$ & $$p25_irr_share_oth_elev_coef$$   \\
+      &  ($$p25_irr_share11_elev_se$$) & ($$p25_irr_share_canal_elev_se$$)   &     ($$p25_irr_share_tubewell_elev_se$$)   &     ($$p25_irr_share_oth_elev_se$$)   \\
+      \hspace{0.5cm}Control group mean& $$p25_irr_share11_elev_mean$$ &  $$p25_irr_share_canal_elev_mean$$  &  $$p25_irr_share_tubewell_elev_mean$$    &  $$p25_irr_share_oth_elev_mean$$  \\
+      \hspace{0.5cm}Observations& $$p25_irr_share11_elev_samp$$  & $$p25_irr_share_canal_elev_samp$$  &  $$p25_irr_share_tubewell_elev_samp$$   &   $$p25_irr_share_oth_elev_samp$$   \\
+      \hspace{0.5cm}R$^{2}$& $$p25_irr_share11_elev_r2$$  & $$p25_irr_share_canal_elev_r2$$  & $$p25_irr_share_tubewell_elev_r2$$   &  $$p25_irr_share_oth_elev_r2$$ \\
+      \hline
+      \end{tabular}
+}}
+\end{center}
+
+\begin{center}
+{\setlength{\tabcolsep}{1em}
+  \resizebox{0.8\textwidth}{!}{
+    \begin{tabular}{lccccc}
+      
+      \multicolumn{4}{l}{\Large\hspace{10pt}\textit{Panel B. Agriculture outcomes}} \\
+      \hline\hline
+      & Agricultural land & Kharif (monsoon) & Rabi (winter)  & Water intensive & Mechanized farm equip. \\
+      & (share of village area) & ag. prod (log) & ag. prod (log) & crops (any) & (share of households)\\
+      \hline
+      \hspace{0.5cm}Below canal& $$p25_ag_share11_elev_coef$$ & $$p25_evi_delta_k_ln_mean_elev_coef$$ & $$p25_evi_delta_r_ln_mean_elev_coef$$  &  $$p25_any_water_crop_elev_coef$$ & $$p25_mech_farm_equip_elev_coef$$ \\
+      &  ($$p25_ag_share11_elev_se$$) &  ($$p25_evi_delta_k_ln_mean_elev_se$$) & ($$p25_evi_delta_r_ln_mean_elev_se$$)  &     ($$p25_any_water_crop_elev_se$$)   &     ($$p25_mech_farm_equip_elev_se$$)   \\
+      \hspace{0.5cm}Control group mean&  $$p25_ag_share11_elev_mean$$ & $$p25_evi_delta_k_ln_mean_elev_mean$$  & $$p25_evi_delta_r_ln_mean_elev_mean$$   & $$p25_any_water_crop_elev_mean$$   &  $$p25_mech_farm_equip_elev_mean$$   \\
+      \hspace{0.5cm}Observations& $$p25_ag_share11_elev_samp$$ &  $$p25_evi_delta_k_ln_mean_elev_samp$$   &  $$p25_evi_delta_r_ln_mean_elev_samp$$   &  $$p25_any_water_crop_elev_samp$$   & $$p25_mech_farm_equip_elev_samp$$  \\
+      \hspace{0.5cm}R$^{2}$& $$p25_ag_share11_elev_r2$$ & $$p25_evi_delta_k_ln_mean_elev_r2$$   & $$p25_evi_delta_r_ln_mean_elev_r2$$   &  $$p25_any_water_crop_elev_r2$$  &  $$p25_mech_farm_equip_elev_r2$$   \\
+
+      \hline\\
+      
+      \multicolumn{4}{l}{\Large\hspace{10pt}\textit{Panel C. Non-farm outcomes}} \\
+      \hline\hline
+      & Population & Total emp. & Services emp. & Manuf. emp & Consumption \\
+      & density (log) & (share of adult pop.) & (share of adult pop.) & (share of adult pop.) & per capita (log) \\
+      \hline
+      \hspace{0.5cm}Below canal& $$p25_popdens_poly11_log_elev_coef$$ & $$p25_ec13_emp_pc_elev_coef$$   & $$p25_ec13_emp_serv_pc_elev_coef$$   &  $$p25_ec13_emp_manuf_pc_elev_coef$$   & $$p25_secc_cons_pc_log_elev_coef$$ \\
+      &     ($$p25_popdens_poly11_log_elev_se$$)   &     ($$p25_ec13_emp_pc_elev_se$$)   &     ($$p25_ec13_emp_serv_pc_elev_se$$)   &     ($$p25_ec13_emp_manuf_pc_elev_se$$)   &     ($$p25_secc_cons_pc_log_elev_se$$)   \\
+      \hspace{0.5cm}Control group mean& $$p25_popdens_poly11_log_elev_mean$$   &  $$p25_ec13_emp_pc_elev_mean$$   & $$p25_ec13_emp_serv_pc_elev_mean$$  & $$p25_ec13_emp_manuf_pc_elev_mean$$   &  $$p25_secc_cons_pc_log_elev_mean$$   \\
+      \hspace{0.5cm}Observations&  $$p25_popdens_poly11_log_elev_samp$$  &  $$p25_ec13_emp_pc_elev_samp$$   &  $$p25_ec13_emp_serv_pc_elev_samp$$   &  $$p25_ec13_emp_manuf_pc_elev_samp$$ & $$p25_secc_cons_pc_log_elev_samp$$   \\
+      \hspace{0.5cm}R$^{2}$&  $$p25_popdens_poly11_log_elev_r2$$   &  $$p25_ec13_emp_pc_elev_r2$$   &  $$p25_ec13_emp_serv_pc_elev_r2$$   & $$p25_ec13_emp_manuf_pc_elev_r2$$  & $$p25_secc_cons_pc_log_elev_r2$$  \\
+      \hline
+    \end{tabular}
+}}
+\end{center}
+
+\begin{center}
+{\setlength{\tabcolsep}{2em}
+  \resizebox{0.8\textwidth}{!}{
+    \begin{tabular}{lcccc}
+      \multicolumn{4}{l}{\Large\textit{Panel D. Education outcomes}} \\
+      \hline\hline
+      & At least primary & At least middle & At least secondary & Literacy  \\
+      & (share of adult pop.) & (share of adult pop.) & (share of adult pop.) & (share of pop.) \\
+      \hline
+      \hspace{0.5cm}Below canal&  $$p25_ed_primary_adult_elev_coef$$ & $$p25_ed_middle_adult_elev_coef$$ & $$p25_ed_secondary_adult_elev_coef$$  & $$p25_pc11_pca_p_lit_pc_elev_coef$$ \\
+      &     ($$p25_ed_primary_adult_elev_se$$)   &     ($$p25_ed_middle_adult_elev_se$$)   &     ($$p25_ed_secondary_adult_elev_se$$)   &     ($$p25_pc11_pca_p_lit_pc_elev_se$$)   \\
+      \hspace{0.5cm}Control group mean&  $$p25_ed_primary_adult_elev_mean$$   &   $$p25_ed_middle_adult_elev_mean$$   &  $$p25_ed_secondary_adult_elev_mean$$   &  $$p25_pc11_pca_p_lit_pc_elev_mean$$\\
+      \hspace{0.5cm}Observations&  $$p25_ed_primary_adult_elev_samp$$   &  $$p25_ed_middle_adult_elev_samp$$   &  $$p25_ed_secondary_adult_elev_samp$$   &  $$p25_pc11_pca_p_lit_pc_elev_samp$$\\
+      \hspace{0.5cm}R$^{2}$&  $$p25_ed_primary_adult_elev_r2$$   & $$p25_ed_middle_adult_elev_r2$$   &  $$p25_ed_secondary_adult_elev_r2$$   & $$p25_pc11_pca_p_lit_pc_elev_r2$$ \\
+      \hline
+      \multicolumn{4}{l}{$^{*}p<0.10, ^{**}p<0.05, ^{***}p<0.01$}
+    \end{tabular}
+}}
+\end{center}

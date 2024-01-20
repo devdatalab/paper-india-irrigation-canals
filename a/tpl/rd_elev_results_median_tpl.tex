@@ -1,0 +1,72 @@
+\begin{center}
+{\setlength{\tabcolsep}{2em}
+  \resizebox{0.8\textwidth}{!}{
+    \begin{tabular}{lcccc}
+      \multicolumn{4}{l}{\Large\textit{Panel A. Irrigation outcomes}} \\
+      \hline\hline
+      & Total irrigated area & Canal irrigated area & Tubewell irrigated area & Other irrigated area \\
+      & (share of ag. land) & (share of ag. land) & (share of ag. land) & (share of ag. land) \\
+      \hline
+      
+      \hspace{0.5cm}Below canal& $$median_irr_share11_elev_coef$$ &  $$median_irr_share_canal_elev_coef$$ & $$median_irr_share_tubewell_elev_coef$$ & $$median_irr_share_oth_elev_coef$$   \\
+      &  ($$median_irr_share11_elev_se$$) & ($$median_irr_share_canal_elev_se$$)   &     ($$median_irr_share_tubewell_elev_se$$)   &     ($$median_irr_share_oth_elev_se$$)   \\
+      \hspace{0.5cm}Control group mean& $$median_irr_share11_elev_mean$$ &  $$median_irr_share_canal_elev_mean$$  &  $$median_irr_share_tubewell_elev_mean$$    &  $$median_irr_share_oth_elev_mean$$  \\
+      \hspace{0.5cm}Observations& $$median_irr_share11_elev_samp$$  & $$median_irr_share_canal_elev_samp$$  &  $$median_irr_share_tubewell_elev_samp$$   &   $$median_irr_share_oth_elev_samp$$   \\
+      \hspace{0.5cm}R$^{2}$& $$median_irr_share11_elev_r2$$  & $$median_irr_share_canal_elev_r2$$  & $$median_irr_share_tubewell_elev_r2$$   &  $$median_irr_share_oth_elev_r2$$ \\
+      \hline
+      \end{tabular}
+}}
+\end{center}
+
+\begin{center}
+{\setlength{\tabcolsep}{1em}
+  \resizebox{0.8\textwidth}{!}{
+    \begin{tabular}{lccccc}
+      
+      \multicolumn{4}{l}{\Large\hspace{10pt}\textit{Panel B. Agriculture outcomes}} \\
+      \hline\hline
+      & Agricultural land & Kharif (monsoon) & Rabi (winter)  & Water intensive & Mechanized farm equip. \\
+      & (share of village area) & ag. prod (log) & ag. prod (log) & crops (any) & (share of households)\\
+      \hline
+      \hspace{0.5cm}Below canal& $$median_ag_share11_elev_coef$$ & $$median_evi_delta_k_ln_mean_elev_coef$$ & $$median_evi_delta_r_ln_mean_elev_coef$$  &  $$median_any_water_crop_elev_coef$$ & $$median_mech_farm_equip_elev_coef$$ \\
+      &  ($$median_ag_share11_elev_se$$) &  ($$median_evi_delta_k_ln_mean_elev_se$$) & ($$median_evi_delta_r_ln_mean_elev_se$$)  &     ($$median_any_water_crop_elev_se$$)   &     ($$median_mech_farm_equip_elev_se$$)   \\
+      \hspace{0.5cm}Control group mean&  $$median_ag_share11_elev_mean$$ & $$median_evi_delta_k_ln_mean_elev_mean$$  & $$median_evi_delta_r_ln_mean_elev_mean$$   & $$median_any_water_crop_elev_mean$$   &  $$median_mech_farm_equip_elev_mean$$   \\
+      \hspace{0.5cm}Observations& $$median_ag_share11_elev_samp$$ &  $$median_evi_delta_k_ln_mean_elev_samp$$   &  $$median_evi_delta_r_ln_mean_elev_samp$$   &  $$median_any_water_crop_elev_samp$$   & $$median_mech_farm_equip_elev_samp$$  \\
+      \hspace{0.5cm}R$^{2}$& $$median_ag_share11_elev_r2$$ & $$median_evi_delta_k_ln_mean_elev_r2$$   & $$median_evi_delta_r_ln_mean_elev_r2$$   &  $$median_any_water_crop_elev_r2$$  &  $$median_mech_farm_equip_elev_r2$$   \\
+
+      \hline\\
+      
+      \multicolumn{4}{l}{\Large\hspace{10pt}\textit{Panel C. Non-farm outcomes}} \\
+      \hline\hline
+      & Population & Total emp. & Services emp. & Manuf. emp & Consumption \\
+      & density (log) & (share of adult pop.) & (share of adult pop.) & (share of adult pop.) & per capita (log) \\
+      \hline
+      \hspace{0.5cm}Below canal& $$median_popdens_poly11_log_elev_coef$$ & $$median_ec13_emp_pc_elev_coef$$   & $$median_ec13_emp_serv_pc_elev_coef$$   &  $$median_ec13_emp_manuf_pc_elev_coef$$   & $$median_secc_cons_pc_log_elev_coef$$ \\
+      &     ($$median_popdens_poly11_log_elev_se$$)   &     ($$median_ec13_emp_pc_elev_se$$)   &     ($$median_ec13_emp_serv_pc_elev_se$$)   &     ($$median_ec13_emp_manuf_pc_elev_se$$)   &     ($$median_secc_cons_pc_log_elev_se$$)   \\
+      \hspace{0.5cm}Control group mean& $$median_popdens_poly11_log_elev_mean$$   &  $$median_ec13_emp_pc_elev_mean$$   & $$median_ec13_emp_serv_pc_elev_mean$$  & $$median_ec13_emp_manuf_pc_elev_mean$$   &  $$median_secc_cons_pc_log_elev_mean$$   \\
+      \hspace{0.5cm}Observations&  $$median_popdens_poly11_log_elev_samp$$  &  $$median_ec13_emp_pc_elev_samp$$   &  $$median_ec13_emp_serv_pc_elev_samp$$   &  $$median_ec13_emp_manuf_pc_elev_samp$$ & $$median_secc_cons_pc_log_elev_samp$$   \\
+      \hspace{0.5cm}R$^{2}$&  $$median_popdens_poly11_log_elev_r2$$   &  $$median_ec13_emp_pc_elev_r2$$   &  $$median_ec13_emp_serv_pc_elev_r2$$   & $$median_ec13_emp_manuf_pc_elev_r2$$  & $$median_secc_cons_pc_log_elev_r2$$  \\
+      \hline
+    \end{tabular}
+}}
+\end{center}
+
+\begin{center}
+{\setlength{\tabcolsep}{2em}
+  \resizebox{0.8\textwidth}{!}{
+    \begin{tabular}{lcccc}
+      \multicolumn{4}{l}{\Large\textit{Panel D. Education outcomes}} \\
+      \hline\hline
+      & At least primary & At least middle & At least secondary & Literacy  \\
+      & (share of adult pop.) & (share of adult pop.) & (share of adult pop.) & (share of pop.) \\
+      \hline
+      \hspace{0.5cm}Below canal&  $$median_ed_primary_adult_elev_coef$$ & $$median_ed_middle_adult_elev_coef$$ & $$median_ed_secondary_adult_elev_coef$$  & $$median_pc11_pca_p_lit_pc_elev_coef$$ \\
+      &     ($$median_ed_primary_adult_elev_se$$)   &     ($$median_ed_middle_adult_elev_se$$)   &     ($$median_ed_secondary_adult_elev_se$$)   &     ($$median_pc11_pca_p_lit_pc_elev_se$$)   \\
+      \hspace{0.5cm}Control group mean&  $$median_ed_primary_adult_elev_mean$$   &   $$median_ed_middle_adult_elev_mean$$   &  $$median_ed_secondary_adult_elev_mean$$   &  $$median_pc11_pca_p_lit_pc_elev_mean$$\\
+      \hspace{0.5cm}Observations&  $$median_ed_primary_adult_elev_samp$$   &  $$median_ed_middle_adult_elev_samp$$   &  $$median_ed_secondary_adult_elev_samp$$   &  $$median_pc11_pca_p_lit_pc_elev_samp$$\\
+      \hspace{0.5cm}R$^{2}$&  $$median_ed_primary_adult_elev_r2$$   & $$median_ed_middle_adult_elev_r2$$   &  $$median_ed_secondary_adult_elev_r2$$   & $$median_pc11_pca_p_lit_pc_elev_r2$$ \\
+      \hline
+      \multicolumn{4}{l}{$^{*}p<0.10, ^{**}p<0.05, ^{***}p<0.01$}
+    \end{tabular}
+}}
+\end{center}
